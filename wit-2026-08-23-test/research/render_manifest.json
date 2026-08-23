@@ -1,0 +1,104 @@
+{
+  "edition": "wit-2026-08-23-test-v2",
+  "script_path": "audio/narration_script_v2.txt",
+  "voice_id": "fb43143e46f44cc6ad7d06230215bab6",
+  "wav": "audio/narration_master.wav",
+  "duration": 61.52,
+  "segments": [
+    {
+      "story_id": "qwen38-max",
+      "cut_start": 0.0,
+      "cut_end": 3.58,
+      "assets": [
+        "assets/real/alibaba_logo.png"
+      ],
+      "payoff": "counter"
+    },
+    {
+      "story_id": "ox-alpha-stealth",
+      "cut_start": 3.58,
+      "cut_end": 13.34,
+      "assets": [
+        "assets/real/openai_logo.png"
+      ],
+      "payoff": "comparison"
+    },
+    {
+      "story_id": "gemini37-flash",
+      "cut_start": 13.34,
+      "cut_end": 25.9,
+      "assets": [
+        "assets/real/google_logo.png"
+      ],
+      "payoff": "bar"
+    },
+    {
+      "story_id": "muse-glimmer",
+      "cut_start": 25.9,
+      "cut_end": 34.02,
+      "assets": [
+        "assets/real/meta_logo.png"
+      ],
+      "payoff": "statcard"
+    },
+    {
+      "story_id": "nemotron35-lightning",
+      "cut_start": 34.02,
+      "cut_end": 44.06,
+      "assets": [
+        "assets/real/nvidia_logo.png"
+      ],
+      "payoff": "counter"
+    }
+  ],
+  "word_timing_source": "captions/words.json",
+  "motion": {
+    "cut_cadence": "locked_asr",
+    "zoom_punch": [
+      1.05,
+      1.1
+    ],
+    "easing": "ease-out-expo"
+  },
+  "palette": {
+    "base": "#0a0a0f",
+    "accents": [
+      "violet",
+      "copper"
+    ],
+    "grammar": "V3-shorts"
+  },
+  "asset_ledger": [
+    {
+      "file": "assets/real/nvidia_logo.png",
+      "license": "Public domain",
+      "source": "Wikimedia Commons"
+    },
+    {
+      "file": "assets/real/google_logo.png",
+      "license": "Public domain",
+      "source": "Wikimedia Commons"
+    },
+    {
+      "file": "assets/real/meta_logo.png",
+      "license": "Public domain",
+      "source": "Wikimedia Commons"
+    },
+    {
+      "file": "assets/real/openai_logo.png",
+      "license": "Public domain",
+      "source": "Wikimedia Commons"
+    },
+    {
+      "file": "assets/real/qwen_logo.png",
+      "license": "Apache-2.0",
+      "source": "Wikimedia Commons"
+    },
+    {
+      "file": "assets/real/alibaba_logo.png",
+      "license": "Public domain",
+      "source": "Wikimedia Commons"
+    }
+  ],
+  "flux_transitions": []
+}
