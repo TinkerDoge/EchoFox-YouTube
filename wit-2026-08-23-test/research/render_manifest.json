@@ -12,7 +12,15 @@
       "assets": [
         "assets/real/alibaba_logo.png"
       ],
-      "payoff": "counter"
+      "payoff": "counter",
+      "narration_span": {
+        "start": 0.0,
+        "end": 3.58
+      },
+      "visual_span": {
+        "start": 0.0,
+        "end": 3.58
+      }
     },
     {
       "story_id": "ox-alpha-stealth",
@@ -21,7 +29,15 @@
       "assets": [
         "assets/real/openai_logo.png"
       ],
-      "payoff": "comparison"
+      "payoff": "comparison",
+      "narration_span": {
+        "start": 3.58,
+        "end": 13.34
+      },
+      "visual_span": {
+        "start": 3.58,
+        "end": 13.34
+      }
     },
     {
       "story_id": "gemini37-flash",
@@ -30,7 +46,15 @@
       "assets": [
         "assets/real/google_logo.png"
       ],
-      "payoff": "bar"
+      "payoff": "bar",
+      "narration_span": {
+        "start": 13.34,
+        "end": 25.9
+      },
+      "visual_span": {
+        "start": 13.34,
+        "end": 25.9
+      }
     },
     {
       "story_id": "muse-glimmer",
@@ -39,7 +63,15 @@
       "assets": [
         "assets/real/meta_logo.png"
       ],
-      "payoff": "statcard"
+      "payoff": "statcard",
+      "narration_span": {
+        "start": 25.9,
+        "end": 34.02
+      },
+      "visual_span": {
+        "start": 25.9,
+        "end": 34.02
+      }
     },
     {
       "story_id": "nemotron35-lightning",
@@ -48,7 +80,15 @@
       "assets": [
         "assets/real/nvidia_logo.png"
       ],
-      "payoff": "counter"
+      "payoff": "counter",
+      "narration_span": {
+        "start": 34.02,
+        "end": 44.06
+      },
+      "visual_span": {
+        "start": 34.02,
+        "end": 44.06
+      }
     }
   ],
   "word_timing_source": "captions/words.json",
@@ -58,7 +98,12 @@
       1.05,
       1.1
     ],
-    "easing": "ease-out-expo"
+    "easing": "ease-out-expo",
+    "cut_pad_s": 0.3,
+    "cut_interval_s": [
+      1.5,
+      2.5
+    ]
   },
   "palette": {
     "base": "#0a0a0f",
@@ -66,39 +111,42 @@
       "violet",
       "copper"
     ],
-    "grammar": "V3-shorts"
+    "grammar": "v3-modern-dark",
+    "base_color": "#0a0a0f"
   },
   "asset_ledger": [
     {
       "file": "assets/real/nvidia_logo.png",
-      "license": "Public domain",
+      "license": "public-domain",
       "source": "Wikimedia Commons"
     },
     {
       "file": "assets/real/google_logo.png",
-      "license": "Public domain",
+      "license": "public-domain",
       "source": "Wikimedia Commons"
     },
     {
       "file": "assets/real/meta_logo.png",
-      "license": "Public domain",
+      "license": "public-domain",
       "source": "Wikimedia Commons"
     },
     {
       "file": "assets/real/openai_logo.png",
-      "license": "Public domain",
+      "license": "public-domain",
       "source": "Wikimedia Commons"
     },
     {
       "file": "assets/real/qwen_logo.png",
-      "license": "Apache-2.0",
+      "license": "pixabay",
       "source": "Wikimedia Commons"
     },
     {
       "file": "assets/real/alibaba_logo.png",
-      "license": "Public domain",
+      "license": "public-domain",
       "source": "Wikimedia Commons"
     }
   ],
-  "flux_transitions": []
+  "flux_transitions": [],
+  "grammar": "v3-modern-dark",
+  "base_color": "#0a0a0f"
 }
