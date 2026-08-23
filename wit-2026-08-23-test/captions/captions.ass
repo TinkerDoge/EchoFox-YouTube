@@ -1,0 +1,59 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 720
+PlayResY: 1280
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,DejaVu Sans,38,&H00FFFFFF,&HAA000000,&H00000000,&H88000000,-1,0,0,0,100,100,0,0,3,2,0,2,40,40,110,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.02,0:00:01.14,Cap,,0,0,0,,{\pos(360,1170)}This week in tech,
+Dialogue: 0,0:00:01.58,0:00:03.34,Cap,,0,0,0,,{\pos(360,1170)}5 signals 60 seconds,
+Dialogue: 0,0:00:03.78,0:00:04.24,Cap,,0,0,0,,{\pos(360,1170)}1.
+Dialogue: 0,0:00:05.00,0:00:06.50,Cap,,0,0,0,,{\pos(360,1170)}Alibaba ships Quinn 3
+Dialogue: 0,0:00:06.52,0:00:08.06,Cap,,0,0,0,,{\pos(360,1170)}.8 max the largest
+Dialogue: 0,0:00:08.08,0:00:09.34,Cap,,0,0,0,,{\pos(360,1170)}open -weight release ever
+Dialogue: 0,0:00:09.36,0:00:10.84,Cap,,0,0,0,,{\pos(360,1170)}at 2 .4 trillion
+Dialogue: 0,0:00:10.86,0:00:12.48,Cap,,0,0,0,,{\pos(360,1170)}parameters with a 1
+Dialogue: 0,0:00:12.50,0:00:13.58,Cap,,0,0,0,,{\pos(360,1170)}million token window.
+Dialogue: 0,0:00:14.28,0:00:14.66,Cap,,0,0,0,,{\pos(360,1170)}2.
+Dialogue: 0,0:00:15.30,0:00:16.44,Cap,,0,0,0,,{\pos(360,1170)}A mystery model called
+Dialogue: 0,0:00:16.46,0:00:17.96,Cap,,0,0,0,,{\pos(360,1170)}X -Alpha appears on
+Dialogue: 0,0:00:17.98,0:00:20.14,Cap,,0,0,0,,{\pos(360,1170)}OpenRouter and beats GPT
+Dialogue: 0,0:00:20.16,0:00:21.74,Cap,,0,0,0,,{\pos(360,1170)}5 .6 on coding
+Dialogue: 0,0:00:21.76,0:00:22.24,Cap,,0,0,0,,{\pos(360,1170)}benchmarks,
+Dialogue: 0,0:00:22.86,0:00:24.10,Cap,,0,0,0,,{\pos(360,1170)}scoring 80 percent on
+Dialogue: 0,0:00:24.12,0:00:25.16,Cap,,0,0,0,,{\pos(360,1170)}deep SSWE,
+Dialogue: 0,0:00:25.66,0:00:27.02,Cap,,0,0,0,,{\pos(360,1170)}the community suspects its
+Dialogue: 0,0:00:27.04,0:00:28.30,Cap,,0,0,0,,{\pos(360,1170)}Z -Poo's next flagship
+Dialogue: 0,0:00:28.32,0:00:29.22,Cap,,0,0,0,,{\pos(360,1170)}testing in disguise.
+Dialogue: 0,0:00:29.96,0:00:30.30,Cap,,0,0,0,,{\pos(360,1170)}3.
+Dialogue: 0,0:00:30.96,0:00:32.34,Cap,,0,0,0,,{\pos(360,1170)}Google ships Gemini 3
+Dialogue: 0,0:00:32.36,0:00:33.96,Cap,,0,0,0,,{\pos(360,1170)}.7 Flash just three
+Dialogue: 0,0:00:33.98,0:00:35.22,Cap,,0,0,0,,{\pos(360,1170)}weeks after 3 .6
+Dialogue: 0,0:00:35.24,0:00:37.06,Cap,,0,0,0,,{\pos(360,1170)}better code generation at
+Dialogue: 0,0:00:37.08,0:00:37.68,Cap,,0,0,0,,{\pos(360,1170)}half the price.
+Dialogue: 0,0:00:38.48,0:00:38.74,Cap,,0,0,0,,{\pos(360,1170)}4.
+Dialogue: 0,0:00:39.44,0:00:40.50,Cap,,0,0,0,,{\pos(360,1170)}Meta returns to open
+Dialogue: 0,0:00:40.52,0:00:41.84,Cap,,0,0,0,,{\pos(360,1170)}weights with Mew's Glimmer
+Dialogue: 0,0:00:41.86,0:00:42.40,Cap,,0,0,0,,{\pos(360,1170)}30B,
+Dialogue: 0,0:00:42.94,0:00:43.94,Cap,,0,0,0,,{\pos(360,1170)}a fully open agent
+Dialogue: 0,0:00:43.96,0:00:45.34,Cap,,0,0,0,,{\pos(360,1170)}model under Apache 2
+Dialogue: 0,0:00:45.36,0:00:46.78,Cap,,0,0,0,,{\pos(360,1170)}.0 that runs on
+Dialogue: 0,0:00:46.80,0:00:47.84,Cap,,0,0,0,,{\pos(360,1170)}one consumer GPU,
+Dialogue: 0,0:00:48.52,0:00:49.12,Cap,,0,0,0,,{\pos(360,1170)}and 5.
+Dialogue: 0,0:00:49.78,0:00:51.58,Cap,,0,0,0,,{\pos(360,1170)}Nvidia's Nematron 3 .5
+Dialogue: 0,0:00:51.60,0:00:53.08,Cap,,0,0,0,,{\pos(360,1170)}lightning runs agents up
+Dialogue: 0,0:00:53.10,0:00:54.26,Cap,,0,0,0,,{\pos(360,1170)}to 4 times faster
+Dialogue: 0,0:00:54.28,0:00:55.90,Cap,,0,0,0,,{\pos(360,1170)}with 3 billion active
+Dialogue: 0,0:00:55.92,0:00:57.46,Cap,,0,0,0,,{\pos(360,1170)}parameters and a million
+Dialogue: 0,0:00:57.48,0:00:58.26,Cap,,0,0,0,,{\pos(360,1170)}token window.
+Dialogue: 0,0:00:58.88,0:01:00.16,Cap,,0,0,0,,{\pos(360,1170)}The pattern this week,
+Dialogue: 0,0:01:00.52,0:01:01.68,Cap,,0,0,0,,{\pos(360,1170)}open models are closing
+Dialogue: 0,0:01:01.70,0:01:03.00,Cap,,0,0,0,,{\pos(360,1170)}fast and prices keep
+Dialogue: 0,0:01:03.02,0:01:03.42,Cap,,0,0,0,,{\pos(360,1170)}falling.
+Dialogue: 0,0:01:03.90,0:01:04.60,Cap,,0,0,0,,{\pos(360,1170)}That's your week in
+Dialogue: 0,0:01:04.62,0:01:04.84,Cap,,0,0,0,,{\pos(360,1170)}tech,
+Dialogue: 0,0:01:05.16,0:01:05.92,Cap,,0,0,0,,{\pos(360,1170)}see you next time.

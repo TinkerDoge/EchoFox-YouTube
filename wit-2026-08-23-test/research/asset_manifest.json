@@ -1,0 +1,56 @@
+[
+  {
+    "file": "openai_astra_cyber.png",
+    "source_url": "https://images.ctfassets.net/kftzwdyauwt9/1P18WVIhz3l2xY4d9JB8H0/b8f0c3c0797e99f4e1fa2e73dc1896ad/Frame.png?w=1600&q=90&fm=png",
+    "description": "OpenAI article art",
+    "use_basis": "publisher artwork; brief attributed editorial excerpt",
+    "bytes": 2690937,
+    "sha256": "4cea5b73bf1b8b1df57c90a77b378f77ce1bd38ef7b29753c1a11e596089ada6",
+    "status": "downloaded"
+  },
+  {
+    "file": "nvidia_lancium_reuters.jpg",
+    "source_url": "https://www.reuters.com/resizer/v2/F2OO44ZFBNIWPI7I4ALSVXB5TI.jpg?auth=52f99fcea45eb88d2503aa5fa0b27c97ed3ca0c3d6eb70a56840b3f2182f5230&width=1600&quality=80",
+    "description": "Reuters lead image",
+    "use_basis": "Reuters-owned image; brief attributed transformative editorial excerpt",
+    "bytes": 190147,
+    "sha256": "28539f262ec696ce62de0d7087ce168a860455232fdb78f12bb2d3cde90a1af3",
+    "status": "downloaded"
+  },
+  {
+    "file": "qwen38_performance.png",
+    "source_url": "https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3.8/performance.png",
+    "description": "Qwen3.8-Max official performance chart",
+    "use_basis": "official product chart; attributed editorial excerpt",
+    "bytes": 1210496,
+    "sha256": "e4364d17ee88292c0cf43c1a13b2df25501b32f1db50c147abec4dc469b47a58",
+    "status": "downloaded"
+  },
+  {
+    "file": "anthropic_fable5_classifier.png",
+    "source_url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/e6d3c7b32cc8a0798c0ad58a2340f846b3c8af42-3840x1855.png",
+    "description": "Anthropic official classifier diagram",
+    "use_basis": "official article diagram; attributed editorial excerpt",
+    "bytes": 212047,
+    "sha256": "9044ddc5cb15ef7c9ca2aaacaabdee83b5269af1f7505a8bbdcf6f1b8611da07",
+    "status": "downloaded"
+  },
+  {
+    "file": "anthropic_fable5.svg",
+    "source_url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/e253e6c4926deb09baf67f41e4e24e8028ea5f36-1000x1000.svg",
+    "description": "Anthropic official story art",
+    "use_basis": "official article art; attributed editorial excerpt",
+    "bytes": 12439,
+    "sha256": "c4076de9203a5cc65f91d2d2c1b07918cced4c477d9a405867ba6720ad7c1d68",
+    "status": "downloaded"
+  },
+  {
+    "file": "stanford_evo2_article.png",
+    "source_url": "https://news.stanford.edu/stories/2026/08/evo-2-ai-tool-e-coli-killer-bacteriophages",
+    "description": "Stanford Report article hero screenshot with headline, photo and source branding",
+    "use_basis": "publisher page excerpt; attributed transformative editorial source card",
+    "bytes": 348610,
+    "sha256": "63f13d4673149ed03f7978962a0de3311308de46cee8e9aa2040c57d5daf0aa8",
+    "status": "captured"
+  }
+]

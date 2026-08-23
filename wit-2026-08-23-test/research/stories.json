@@ -1,0 +1,87 @@
+{
+  "edition_date": "2026-08-23",
+  "channel": "The Tensor Foundry",
+  "selection_basis": "Mid-to-late August 2026 model-release wave; logos from Wikimedia Commons (PD/Apache) with on-screen attribution.",
+  "stories": [
+    {
+      "rank": 1,
+      "slug": "qwen38-max",
+      "headline": "Qwen3.8-Max: largest open-weight release ever",
+      "date": "2026-08-03",
+      "source": "Alibaba / Tongyi Lab",
+      "url": "https://local-ai-zone.github.io/blog/ai-updates-august-2026.html",
+      "logo": "alibaba_logo.png",
+      "attribution": "Logo: Wikimedia Commons",
+      "verified_claims": [
+        "2.4 trillion parameters (~95B active)",
+        "1M-token context with native multimodal input",
+        "#6 of 218 models on benchlm.ai composite at launch"
+      ],
+      "payoff": {"type": "counter", "value": 2400000000000, "label": "parameters"}
+    },
+    {
+      "rank": 2,
+      "slug": "ox-alpha-stealth",
+      "headline": "Mystery model OX Alpha beats GPT-5.6 on coding",
+      "date": "2026-08-20",
+      "source": "OpenRouter listing",
+      "url": "https://local-ai-zone.github.io/blog/ai-updates-august-2026.html",
+      "logo": "openai_logo.png",
+      "attribution": "Logo: Wikimedia Commons",
+      "verified_claims": [
+        "80% DeepSWE Pass@1 vs GPT-5.6-sol 52%",
+        "1,048,576-token context window",
+        "Integrated into Hermes Agent within 24 hours"
+      ],
+      "payoff": {"type": "comparison", "values": [["OX Alpha", 80], ["Claude Fable 5", 65], ["GLM-5.3", 62], ["GPT-5.6-sol", 52]], "label": "DeepSWE Pass@1 %"}
+    },
+    {
+      "rank": 3,
+      "slug": "gemini37-flash",
+      "headline": "Gemini 3.7 Flash ships three weeks after 3.6",
+      "date": "2026-08-13",
+      "source": "Google",
+      "url": "https://local-ai-zone.github.io/blog/ai-updates-august-2026.html",
+      "logo": "google_logo.png",
+      "attribution": "Logo: Wikimedia Commons",
+      "verified_claims": [
+        "43.6% FrontierCode 1.1 Main, up from 34.4%",
+        "1588 Elo on Code Arena",
+        "Intro pricing at half of 3.6 Flash levels"
+      ],
+      "payoff": {"type": "bar", "values": [["3.7 Flash", 43.6], ["3.6 Flash", 34.4]], "label": "FrontierCode %"}
+    },
+    {
+      "rank": 4,
+      "slug": "muse-glimmer",
+      "headline": "Meta returns to open weights with Muse Glimmer 30B",
+      "date": "2026-08-10",
+      "source": "Meta Superintelligence Labs",
+      "url": "https://local-ai-zone.github.io/blog/ai-updates-august-2026.html",
+      "logo": "meta_logo.png",
+      "attribution": "Logo: Wikimedia Commons",
+      "verified_claims": [
+        "29.6B dense multimodal model under Apache 2.0",
+        "128K native context, distilled from Muse Spark",
+        "Beats Qwen3.6-27B on agentic benchmarks"
+      ],
+      "payoff": {"type": "statcard", "value": "Apache 2.0", "label": "fully open license"}
+    },
+    {
+      "rank": 5,
+      "slug": "nemotron35-lightning",
+      "headline": "Nemotron 3.5 Lightning: fastest open agent model",
+      "date": "2026-08-11",
+      "source": "NVIDIA",
+      "url": "https://local-ai-zone.github.io/blog/ai-updates-august-2026.html",
+      "logo": "nvidia_logo.png",
+      "attribution": "Logo: Wikimedia Commons",
+      "verified_claims": [
+        "30B MoE with ~3B active parameters",
+        "Up to 4x faster for agentic workloads",
+        "1M-token context, day-zero on NIM"
+      ],
+      "payoff": {"type": "counter", "value": 1000000, "label": "token context"}
+    }
+  ]
+}

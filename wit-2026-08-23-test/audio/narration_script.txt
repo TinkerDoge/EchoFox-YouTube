@@ -1,0 +1,8 @@
+[confident] This week in tech: five signals, sixty seconds.
+One. Alibaba ships Qwen 3.8 Max — the largest open-weight release ever, at 2.4 trillion parameters with a one-million-token window.
+Two. A mystery model called OX Alpha appears on Open Router and beats GPT-5.6 on coding benchmarks, scoring eighty percent on Deep SWE — the community suspects it's Zhipu's next flagship testing in disguise.
+Three. Google ships Gemini 3.7 Flash just three weeks after 3.6 — better code generation, at half the price.
+Four. Meta returns to open weights with Muse Glimmer thirty B — a fully open agent model under Apache two-point-oh that runs on one consumer GPU.
+And five. NVIDIA's Nemotron 3.5 Lightning runs agents up to four times faster, with three billion active parameters and a million-token window.
+The pattern this week: open models are closing fast, and prices keep falling.
+That's your week in tech. See you next time.

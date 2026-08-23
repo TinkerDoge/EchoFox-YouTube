@@ -1,0 +1,42 @@
+{
+  "video": "/home/dogetinker/projects/tensor-foundry-youtube/wit-2026-08-23-test/weekly_in_tech_v2.mp4",
+  "sha256": "5b32284bd796b0ce6115446b3cb62c2841a9479a298e20e30ec2a2d55c3ec40d",
+  "probe": {
+    "programs": [],
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 720,
+        "height": 1280,
+        "r_frame_rate": "30/1"
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2,
+        "r_frame_rate": "0/0"
+      }
+    ],
+    "format": {
+      "duration": "61.500000",
+      "size": "2458612",
+      "bit_rate": "319819"
+    }
+  },
+  "full_decode": "passed",
+  "integrated_lufs": -24.1,
+  "true_peak_dbfs": -4.0,
+  "montage": "/home/dogetinker/projects/tensor-foundry-youtube/wit-2026-08-23-test/qa/final/montage.jpg",
+  "montage_sha256": "13884b95c7750da8e6df5a10e3446466f29d3724b8aae71fe7df557adc3eacca",
+  "sampled_frames": 16,
+  "human_gates_remaining": [
+    "voice identity/timbre",
+    "caption/content overlap",
+    "source-rights review",
+    "final user approval"
+  ]
+}

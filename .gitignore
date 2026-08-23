@@ -1,0 +1,5 @@
+.venv/
+visual/frames/
+__pycache__/
+*.pyc
+qa/frame*.png

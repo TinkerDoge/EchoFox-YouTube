@@ -1,0 +1,49 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 720
+PlayResY: 1280
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,DejaVu Sans,38,&H00FFFFFF,&HAA000000,&H00000000,&H88000000,-1,0,0,0,100,100,0,0,3,2,0,2,40,40,110,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.02,0:00:00.92,Cap,,0,0,0,,{\pos(360,1170)}This week in tech...
+Dialogue: 0,0:00:01.46,0:00:03.38,Cap,,0,0,0,,{\pos(360,1170)}five signals, sixty seconds.
+Dialogue: 0,0:00:03.70,0:00:05.56,Cap,,0,0,0,,{\pos(360,1170)}One! Alibaba just shipped
+Dialogue: 0,0:00:05.58,0:00:06.72,Cap,,0,0,0,,{\pos(360,1170)}Qwen three-point-eight Max —
+Dialogue: 0,0:00:07.08,0:00:08.02,Cap,,0,0,0,,{\pos(360,1170)}the largest open-weight release
+Dialogue: 0,0:00:08.04,0:00:09.90,Cap,,0,0,0,,{\pos(360,1170)}ever. Two point four
+Dialogue: 0,0:00:09.92,0:00:11.88,Cap,,0,0,0,,{\pos(360,1170)}trillion parameters... a one-million-token
+Dialogue: 0,0:00:11.90,0:00:12.94,Cap,,0,0,0,,{\pos(360,1170)}window. Two. A
+Dialogue: 0,0:00:13.48,0:00:15.32,Cap,,0,0,0,,{\pos(360,1170)}mystery model called OX
+Dialogue: 0,0:00:15.34,0:00:16.78,Cap,,0,0,0,,{\pos(360,1170)}Alpha appeared on Open
+Dialogue: 0,0:00:16.80,0:00:18.08,Cap,,0,0,0,,{\pos(360,1170)}Router this week —
+Dialogue: 0,0:00:18.50,0:00:19.58,Cap,,0,0,0,,{\pos(360,1170)}and beat GPT-five-point-six on
+Dialogue: 0,0:00:19.60,0:00:21.14,Cap,,0,0,0,,{\pos(360,1170)}coding benchmarks. Eighty percent
+Dialogue: 0,0:00:21.72,0:00:22.86,Cap,,0,0,0,,{\pos(360,1170)}on Deep SWE. Nobody
+Dialogue: 0,0:00:22.88,0:00:25.24,Cap,,0,0,0,,{\pos(360,1170)}knows who built it.
+Dialogue: 0,0:00:25.26,0:00:27.22,Cap,,0,0,0,,{\pos(360,1170)}Three. Google shipped Gemini
+Dialogue: 0,0:00:27.24,0:00:28.76,Cap,,0,0,0,,{\pos(360,1170)}three-point-seven Flash — just
+Dialogue: 0,0:00:28.78,0:00:30.08,Cap,,0,0,0,,{\pos(360,1170)}three weeks after the
+Dialogue: 0,0:00:30.10,0:00:31.42,Cap,,0,0,0,,{\pos(360,1170)}last one. Better code
+Dialogue: 0,0:00:31.58,0:00:32.96,Cap,,0,0,0,,{\pos(360,1170)}generation, at half the
+Dialogue: 0,0:00:32.98,0:00:33.64,Cap,,0,0,0,,{\pos(360,1170)}price. Four. Meta
+Dialogue: 0,0:00:34.24,0:00:35.96,Cap,,0,0,0,,{\pos(360,1170)}is back in the
+Dialogue: 0,0:00:35.98,0:00:36.76,Cap,,0,0,0,,{\pos(360,1170)}open-weights game. Muse Glimmer
+Dialogue: 0,0:00:36.78,0:00:38.68,Cap,,0,0,0,,{\pos(360,1170)}thirty B... fully open,
+Dialogue: 0,0:00:39.24,0:00:40.70,Cap,,0,0,0,,{\pos(360,1170)}Apache two-point-oh, and it
+Dialogue: 0,0:00:40.72,0:00:41.92,Cap,,0,0,0,,{\pos(360,1170)}runs on a single
+Dialogue: 0,0:00:41.94,0:00:42.96,Cap,,0,0,0,,{\pos(360,1170)}consumer GPU. And five!
+Dialogue: 0,0:00:42.98,0:00:45.80,Cap,,0,0,0,,{\pos(360,1170)}NVIDIA's Nemotron three-point-five Lightning
+Dialogue: 0,0:00:45.82,0:00:47.48,Cap,,0,0,0,,{\pos(360,1170)}runs AI agents up
+Dialogue: 0,0:00:47.50,0:00:49.02,Cap,,0,0,0,,{\pos(360,1170)}to four times faster...
+Dialogue: 0,0:00:49.04,0:00:50.18,Cap,,0,0,0,,{\pos(360,1170)}on just three billion
+Dialogue: 0,0:00:50.96,0:00:51.94,Cap,,0,0,0,,{\pos(360,1170)}active parameters. The pattern
+Dialogue: 0,0:00:51.96,0:00:52.82,Cap,,0,0,0,,{\pos(360,1170)}this week?
+Dialogue: 0,0:00:53.44,0:00:54.60,Cap,,0,0,0,,{\pos(360,1170)}Open models are closing
+Dialogue: 0,0:00:54.76,0:00:56.14,Cap,,0,0,0,,{\pos(360,1170)}fast... and prices keep
+Dialogue: 0,0:00:56.16,0:00:57.64,Cap,,0,0,0,,{\pos(360,1170)}falling. That's your week
+Dialogue: 0,0:00:57.66,0:00:59.42,Cap,,0,0,0,,{\pos(360,1170)}in tech. See you
+Dialogue: 0,0:00:59.44,0:01:00.62,Cap,,0,0,0,,{\pos(360,1170)}next time.
