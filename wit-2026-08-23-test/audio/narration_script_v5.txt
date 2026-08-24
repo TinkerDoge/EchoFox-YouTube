@@ -1,0 +1,15 @@
+[excited] This week in tech — five big wins in sixty seconds.
+
+[delighted] One! Alibaba just dropped Qwen three-point-eight Max, and it is huge. Two point four trillion parameters, with a one-million-token window. What a time to be alive!
+
+[amused] Two. A mystery model called OX Alpha showed up on Open Router, and quietly beat GPT five point six at coding. [impressed] Eighty percent on Deep SWE. [curious] And nobody knows who built it.
+
+[happy] Three! Google shipped Gemini three point seven Flash, just three weeks after the last one. Better code generation, at half the price.
+
+[pleased] Four. Meta is back in the open weights game. Muse Glimmer thirty B — fully open, Apache two point oh, and it runs on a single consumer GPU.
+
+[energetic] And five — NVIDIA's Nemotron three point five Lightning runs AI agents up to four times faster, on just three billion active parameters.
+
+[thoughtful] The pattern this week? Open models are closing fast, and prices keep falling.
+
+[warm] That's your week in tech. See you next time.

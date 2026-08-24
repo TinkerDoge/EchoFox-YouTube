@@ -1,0 +1,120 @@
+{
+  "edition": "wit-2026-08-24-v6-retrocomic",
+  "script_path": "audio/narration_script_v5.txt",
+  "voice_id": "fb43143e46f44cc6ad7d06230215bab6",
+  "wav": "audio/narration_v6_master.wav",
+  "duration": 55.18,
+  "style": "retro-comic",
+  "segments": [
+    {
+      "story_id": "intro",
+      "cut_start": 0.0,
+      "cut_end": 2.88,
+      "assets": [],
+      "payoff": "title"
+    },
+    {
+      "story_id": "qwen38-max",
+      "cut_start": 2.88,
+      "cut_end": 13.01,
+      "assets": [
+        "alibaba_logo.png"
+      ],
+      "payoff": "counter"
+    },
+    {
+      "story_id": "ox-alpha-stealth",
+      "cut_start": 13.01,
+      "cut_end": 23.98,
+      "assets": [
+        "openai_logo.png"
+      ],
+      "payoff": "comparison"
+    },
+    {
+      "story_id": "gemini37-flash",
+      "cut_start": 23.98,
+      "cut_end": 31.24,
+      "assets": [
+        "google_logo.png"
+      ],
+      "payoff": "bar"
+    },
+    {
+      "story_id": "muse-glimmer",
+      "cut_start": 31.24,
+      "cut_end": 40.01,
+      "assets": [
+        "meta_logo.png"
+      ],
+      "payoff": "statcard"
+    },
+    {
+      "story_id": "nemotron35-lightning",
+      "cut_start": 40.01,
+      "cut_end": 47.94,
+      "assets": [
+        "nvidia_logo.png"
+      ],
+      "payoff": "multiplier"
+    },
+    {
+      "story_id": "recap",
+      "cut_start": 47.94,
+      "cut_end": 53.75,
+      "assets": [],
+      "payoff": "recap"
+    }
+  ],
+  "motion": {
+    "cut_cadence": [
+      1.5,
+      2.5
+    ],
+    "zoom_punch": [
+      1.05,
+      1.1
+    ],
+    "easing": "ease_out_expo"
+  },
+  "palette": {
+    "paper": "#f4e9d3",
+    "ink": "#141210",
+    "pop_red": "#e63329",
+    "pop_yellow": "#ffc61a",
+    "pop_cyan": "#28b5c8",
+    "pop_blue": "#2b50c8"
+  },
+  "asset_ledger": [
+    {
+      "file": "assets/real/alibaba_logo.png",
+      "license": "official brand logo, editorial use",
+      "source": "wikimedia"
+    },
+    {
+      "file": "assets/real/openai_logo.png",
+      "license": "official brand logo, editorial use",
+      "source": "wikimedia"
+    },
+    {
+      "file": "assets/real/google_logo.png",
+      "license": "official brand logo, editorial use",
+      "source": "wikimedia"
+    },
+    {
+      "file": "assets/real/meta_logo.png",
+      "license": "official brand logo, editorial use",
+      "source": "wikimedia"
+    },
+    {
+      "file": "assets/real/nvidia_logo.png",
+      "license": "official brand logo, editorial use",
+      "source": "wikimedia"
+    },
+    {
+      "file": "audio/narration_v5_master.wav",
+      "license": "Fish Audio s2.1-pro-free, Megan voice",
+      "source": "fish_tts.sh"
+    }
+  ]
+}

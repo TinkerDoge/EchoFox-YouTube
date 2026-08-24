@@ -1,0 +1,6 @@
+.venv/
+visual/frames*/
+__pycache__/
+*.pyc
+tmp_asr.py
+qa/fc_*.png

@@ -1,0 +1,26 @@
+{
+  "title": "Qwen 3.8 Max, Mystery Model OX Alpha & 3 More AI Stories This Week",
+  "description": "Five AI stories from this week, in 55 seconds:\n\n1. Alibaba ships Qwen3.8-Max — the largest open-weight release ever: 2.4 trillion parameters, 1M-token window.\n2. A mystery model \"OX Alpha\" appeared on OpenRouter and beat GPT-5.6 on coding benchmarks (80% DeepSWE). Nobody knows who built it.\n3. Google ships Gemini 3.7 Flash just three weeks after 3.6 — better code generation at half the price.\n4. Meta returns to open weights with Muse Glimmer 30B — fully open under Apache 2.0.\n5. NVIDIA's Nemotron 3.5 Lightning runs AI agents up to 4x faster on ~3B active parameters.\n\nSources:\nAlibaba / Tongyi Lab (via Local AI Zone roundup) — https://local-ai-zone.github.io/blog/ai-updates-august-2026.html\nOpenRouter listing (OX Alpha) — https://openrouter.ai/\nGoogle (Gemini 3.7 Flash) — https://local-ai-zone.github.io/blog/ai-updates-august-2026.html\nMeta Superintelligence Labs (Muse Glimmer 30B) — https://local-ai-zone.github.io/blog/ai-updates-august-2026.html\nNVIDIA (Nemotron 3.5 Lightning) — https://local-ai-zone.github.io/blog/ai-updates-august-2026.html\n\nWeekly In Tech — narrated with Fish Audio (Megan). Retro-comic visuals are original editorial graphics by The Tensor Foundry; company logos used for editorial identification, courtesy of their owners (source: Wikimedia Commons). Music bed is an original composition by The Tensor Foundry.\n\n#AI #TechNews #AInews #Qwen #OpenAI #Gemini #Meta #NVIDIA #WeeklyInTech #Shorts",
+  "categoryId": "28",
+  "privacyStatus": "public",
+  "tags": [
+    "AI news",
+    "artificial intelligence",
+    "tech news",
+    "Qwen3.8 Max",
+    "Alibaba Qwen",
+    "OX Alpha",
+    "mystery model",
+    "Gemini 3.7 Flash",
+    "Google Gemini",
+    "Muse Glimmer",
+    "Meta open weights",
+    "Nemotron Lightning",
+    "NVIDIA",
+    "open source models",
+    "LLM",
+    "Weekly In Tech",
+    "The Tensor Foundry",
+    "YouTube Shorts"
+  ]
+}

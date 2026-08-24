@@ -1,0 +1,55 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 720
+PlayResY: 1280
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Comic,Luckiest Guy,38,&H00101012,&H000000FF,&H00D3E9F4,&H96000000,-1,0,0,0,100,100,1,0,3,5,3,2,44,44,52,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.83,Comic,,0,0,0,,{\pos(360,1176)}This week in tech
+Dialogue: 0,0:00:00.78,0:00:01.79,Comic,,0,0,0,,{\pos(360,1176)}— five big wins
+Dialogue: 0,0:00:01.74,0:00:02.93,Comic,,0,0,0,,{\pos(360,1176)}in sixty seconds.
+Dialogue: 0,0:00:03.09,0:00:05.10,Comic,,0,0,0,,{\pos(360,1176)}One! Alibaba just dropped
+Dialogue: 0,0:00:05.05,0:00:07.04,Comic,,0,0,0,,{\pos(360,1176)}Qwen three-point-eight Max, and
+Dialogue: 0,0:00:06.99,0:00:07.96,Comic,,0,0,0,,{\pos(360,1176)}it is huge.
+Dialogue: 0,0:00:08.08,0:00:09.09,Comic,,0,0,0,,{\pos(360,1176)}Two point four trillion
+Dialogue: 0,0:00:09.04,0:00:11.31,Comic,,0,0,0,,{\pos(360,1176)}parameters, with a one-million-token
+Dialogue: 0,0:00:11.26,0:00:12.54,Comic,,0,0,0,,{\pos(360,1176)}window. What a time
+Dialogue: 0,0:00:12.49,0:00:13.06,Comic,,0,0,0,,{\pos(360,1176)}to be alive!
+Dialogue: 0,0:00:13.35,0:00:14.85,Comic,,0,0,0,,{\pos(360,1176)}Two. A mystery model
+Dialogue: 0,0:00:14.80,0:00:16.19,Comic,,0,0,0,,{\pos(360,1176)}called OX Alpha showed
+Dialogue: 0,0:00:16.14,0:00:17.15,Comic,,0,0,0,,{\pos(360,1176)}up on Open Router,
+Dialogue: 0,0:00:17.10,0:00:19.01,Comic,,0,0,0,,{\pos(360,1176)}and quietly beat GPT
+Dialogue: 0,0:00:18.96,0:00:20.03,Comic,,0,0,0,,{\pos(360,1176)}five point six at
+Dialogue: 0,0:00:19.98,0:00:21.51,Comic,,0,0,0,,{\pos(360,1176)}coding. Eighty percent on
+Dialogue: 0,0:00:21.46,0:00:22.31,Comic,,0,0,0,,{\pos(360,1176)}Deep SWE.
+Dialogue: 0,0:00:22.56,0:00:23.55,Comic,,0,0,0,,{\pos(360,1176)}And nobody knows who
+Dialogue: 0,0:00:23.50,0:00:24.03,Comic,,0,0,0,,{\pos(360,1176)}built it.
+Dialogue: 0,0:00:24.08,0:00:25.81,Comic,,0,0,0,,{\pos(360,1176)}Three! Google shipped Gemini
+Dialogue: 0,0:00:25.76,0:00:26.95,Comic,,0,0,0,,{\pos(360,1176)}three point seven Flash,
+Dialogue: 0,0:00:26.90,0:00:28.35,Comic,,0,0,0,,{\pos(360,1176)}just three weeks after
+Dialogue: 0,0:00:28.30,0:00:29.05,Comic,,0,0,0,,{\pos(360,1176)}the last one.
+Dialogue: 0,0:00:29.30,0:00:30.69,Comic,,0,0,0,,{\pos(360,1176)}Better code generation, at
+Dialogue: 0,0:00:30.64,0:00:31.29,Comic,,0,0,0,,{\pos(360,1176)}half the price.
+Dialogue: 0,0:00:31.60,0:00:33.00,Comic,,0,0,0,,{\pos(360,1176)}Four. Meta is back
+Dialogue: 0,0:00:32.95,0:00:33.76,Comic,,0,0,0,,{\pos(360,1176)}in the open weights
+Dialogue: 0,0:00:33.71,0:00:35.49,Comic,,0,0,0,,{\pos(360,1176)}game. Muse Glimmer thirty
+Dialogue: 0,0:00:34.42,0:00:36.52,Comic,,0,0,0,,{\pos(360,1176)}B — fully open,
+Dialogue: 0,0:00:36.83,0:00:37.88,Comic,,0,0,0,,{\pos(360,1176)}Apache two point oh,
+Dialogue: 0,0:00:38.33,0:00:38.90,Comic,,0,0,0,,{\pos(360,1176)}and it runs on
+Dialogue: 0,0:00:38.85,0:00:40.06,Comic,,0,0,0,,{\pos(360,1176)}a single consumer GPU.
+Dialogue: 0,0:00:40.51,0:00:41.96,Comic,,0,0,0,,{\pos(360,1176)}And five — NVIDIA's
+Dialogue: 0,0:00:41.91,0:00:43.20,Comic,,0,0,0,,{\pos(360,1176)}Nemotron three point five
+Dialogue: 0,0:00:43.15,0:00:44.60,Comic,,0,0,0,,{\pos(360,1176)}Lightning runs AI agents
+Dialogue: 0,0:00:44.55,0:00:45.42,Comic,,0,0,0,,{\pos(360,1176)}up to four times
+Dialogue: 0,0:00:45.37,0:00:46.85,Comic,,0,0,0,,{\pos(360,1176)}faster, on just three
+Dialogue: 0,0:00:46.80,0:00:47.99,Comic,,0,0,0,,{\pos(360,1176)}billion active parameters.
+Dialogue: 0,0:00:48.50,0:00:49.35,Comic,,0,0,0,,{\pos(360,1176)}The pattern this week?
+Dialogue: 0,0:00:49.52,0:00:50.59,Comic,,0,0,0,,{\pos(360,1176)}Open models are closing
+Dialogue: 0,0:00:50.54,0:00:52.13,Comic,,0,0,0,,{\pos(360,1176)}fast, and prices keep
+Dialogue: 0,0:00:52.08,0:00:53.44,Comic,,0,0,0,,{\pos(360,1176)}falling. That's your week
+Dialogue: 0,0:00:53.39,0:00:53.80,Comic,,0,0,0,,{\pos(360,1176)}in tech.
+Dialogue: 0,0:00:54.13,0:00:54.84,Comic,,0,0,0,,{\pos(360,1176)}See you next time.
