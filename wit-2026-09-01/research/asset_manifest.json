@@ -1,0 +1,34 @@
+{
+  "edition": "wit-2026-09-01",
+  "visual_policy": "Original Pillow-rendered editorial graphics; no publisher photography, wire photography, stock imagery, or generated impersonation imagery.",
+  "assets": [
+    {
+      "file": "assets/real/openai_logo.png",
+      "owner": "OpenAI",
+      "license_or_basis": "Existing local editorial-identification asset; confirm current provenance before public release.",
+      "attribution": "OpenAI logo — editorial identification; not endorsement.",
+      "usage": "Story 1 and Story 5 small identification plate."
+    },
+    {
+      "file": "assets/real/nvidia_logo.png",
+      "owner": "NVIDIA",
+      "license_or_basis": "Existing local editorial-identification asset; confirm current provenance before public release.",
+      "attribution": "NVIDIA logo — editorial identification; not endorsement.",
+      "usage": "Story 2 small identification plate."
+    },
+    {
+      "file": "assets/real/google_logo.png",
+      "owner": "Google",
+      "license_or_basis": "Existing local editorial-identification asset; confirm current provenance before public release.",
+      "attribution": "Google logo — editorial identification; not endorsement.",
+      "usage": "Story 3 small identification plate."
+    },
+    {
+      "file": "visual/frames_v9/*.png",
+      "owner": "The Tensor Foundry",
+      "license_or_basis": "Original work.",
+      "attribution": "None required.",
+      "usage": "All backgrounds, information cards, and diagrams."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+Weekly in Tech, September first.
+
+OpenAI says ChatGPT Ads reached a one-billion-dollar run rate in under two hundred days, expanding self-service buying across regions.
+
+AWS and NVIDIA plan two million additional GPUs in 2027 and 2028. The agreement spans infrastructure, open models, data processing, and robotics.
+
+Google says Gemma passed one billion downloads, with more than one hundred thousand community variants.
+
+MIT researchers report CrysVCD reached high lattice-dynamics stability in nearly seventy percent of computational material generations.
+
+Finally, OpenAI and Hugging Face published security findings, with stronger containment, monitoring, and evaluation controls planned.
+
+The pattern: AI distribution, capacity, research, and security are moving together.

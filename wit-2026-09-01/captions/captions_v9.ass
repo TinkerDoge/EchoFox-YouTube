@@ -1,0 +1,38 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 720
+PlayResY: 1280
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Editorial,Archivo,34,&H0017212B,&H000000FF,&H00F1F4F5,&H60000000,-1,0,0,0,100,100,0,0,3,5,2,2,44,44,52,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.39,Editorial,,0,0,0,,{\pos(360,1202)}Weekly in Tech, September
+Dialogue: 0,0:00:01.34,0:00:04.33,Editorial,,0,0,0,,{\pos(360,1202)}first. OpenAI says ChatGPT
+Dialogue: 0,0:00:04.28,0:00:05.87,Editorial,,0,0,0,,{\pos(360,1202)}Ads reached a one-billion-dollar
+Dialogue: 0,0:00:05.82,0:00:07.15,Editorial,,0,0,0,,{\pos(360,1202)}run rate in under
+Dialogue: 0,0:00:07.10,0:00:08.95,Editorial,,0,0,0,,{\pos(360,1202)}two hundred days, expanding
+Dialogue: 0,0:00:08.90,0:00:10.99,Editorial,,0,0,0,,{\pos(360,1202)}self-service buying across regions.
+Dialogue: 0,0:00:11.92,0:00:13.65,Editorial,,0,0,0,,{\pos(360,1202)}AWS and NVIDIA plan
+Dialogue: 0,0:00:12.86,0:00:14.69,Editorial,,0,0,0,,{\pos(360,1202)}two million additional GPUs
+Dialogue: 0,0:00:14.64,0:00:17.21,Editorial,,0,0,0,,{\pos(360,1202)}in 2027 and 2028.
+Dialogue: 0,0:00:17.92,0:00:19.79,Editorial,,0,0,0,,{\pos(360,1202)}The agreement spans infrastructure,
+Dialogue: 0,0:00:19.88,0:00:21.21,Editorial,,0,0,0,,{\pos(360,1202)}open models, data processing,
+Dialogue: 0,0:00:21.70,0:00:21.99,Editorial,,0,0,0,,{\pos(360,1202)}and robotics.
+Dialogue: 0,0:00:23.04,0:00:24.25,Editorial,,0,0,0,,{\pos(360,1202)}Google says Gemma passed
+Dialogue: 0,0:00:24.20,0:00:26.05,Editorial,,0,0,0,,{\pos(360,1202)}one billion downloads, with
+Dialogue: 0,0:00:26.00,0:00:27.47,Editorial,,0,0,0,,{\pos(360,1202)}more than one hundred
+Dialogue: 0,0:00:26.38,0:00:28.27,Editorial,,0,0,0,,{\pos(360,1202)}thousand community variants.
+Dialogue: 0,0:00:28.88,0:00:31.35,Editorial,,0,0,0,,{\pos(360,1202)}MIT researchers report CrysVCD
+Dialogue: 0,0:00:31.30,0:00:33.55,Editorial,,0,0,0,,{\pos(360,1202)}reached high lattice-dynamics stability
+Dialogue: 0,0:00:33.50,0:00:34.85,Editorial,,0,0,0,,{\pos(360,1202)}in nearly seventy percent
+Dialogue: 0,0:00:34.80,0:00:36.73,Editorial,,0,0,0,,{\pos(360,1202)}of computational material generations.
+Dialogue: 0,0:00:37.52,0:00:39.13,Editorial,,0,0,0,,{\pos(360,1202)}Finally, OpenAI and Hugging
+Dialogue: 0,0:00:39.08,0:00:40.73,Editorial,,0,0,0,,{\pos(360,1202)}Face published security findings,
+Dialogue: 0,0:00:40.68,0:00:42.79,Editorial,,0,0,0,,{\pos(360,1202)}with stronger containment, monitoring,
+Dialogue: 0,0:00:43.22,0:00:44.69,Editorial,,0,0,0,,{\pos(360,1202)}and evaluation controls planned.
+Dialogue: 0,0:00:45.32,0:00:46.63,Editorial,,0,0,0,,{\pos(360,1202)}The pattern: AI distribution,
+Dialogue: 0,0:00:47.26,0:00:48.93,Editorial,,0,0,0,,{\pos(360,1202)}capacity, research, and security
+Dialogue: 0,0:00:48.88,0:00:49.77,Editorial,,0,0,0,,{\pos(360,1202)}are moving together.

@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads",
+      "title": "",
+      "accessed": "2026-09-01"
+    },
+    {
+      "id": 2,
+      "url": "https://nvidianews.nvidia.com/news/aws-and-nvidia-to-deliver-2-million-additional-gpus-and-next-generation-infrastructure-for-agentic-and-physical-ai",
+      "title": "",
+      "accessed": "2026-09-01"
+    },
+    {
+      "id": 3,
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-one-billion-downloads",
+      "title": "",
+      "accessed": "2026-09-01"
+    },
+    {
+      "id": 4,
+      "url": "https://news.mit.edu/2026/ai-helps-design-new-materials-that-work-in-real-world-0826",
+      "title": "",
+      "accessed": "2026-09-01"
+    },
+    {
+      "id": 5,
+      "url": "https://openai.com/index/hugging-face-model-evaluation-security-incident",
+      "title": "",
+      "accessed": "2026-09-01"
+    }
+  ]
+}

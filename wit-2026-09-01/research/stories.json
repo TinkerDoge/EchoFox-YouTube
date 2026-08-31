@@ -1,0 +1,72 @@
+{
+  "edition_date": "2026-09-01",
+  "channel": "The Tensor Foundry",
+  "selection_basis": "Five primary-source reports published or updated during the Aug 26–31, 2026 reporting window. Vendor and institution metrics are labeled as source-reported.",
+  "stories": [
+    {
+      "rank": 1,
+      "slug": "chatgpt-ads-expansion",
+      "headline": "OpenAI says ChatGPT Ads hit a $1B annualized run rate",
+      "date": "2026-08-31",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads/",
+      "logo": "openai_logo.png",
+      "attribution": "OpenAI logo used for editorial identification",
+      "claim_status": "primary-claim",
+      "verified_claims": ["OpenAI-reported: $1B annualized run rate in under 200 days"],
+      "payoff": {"type": "statcard", "value": "$1B", "label": "annualized run rate"}
+    },
+    {
+      "rank": 2,
+      "slug": "aws-nvidia-gpu-expansion",
+      "headline": "AWS and NVIDIA plan 2M additional GPUs",
+      "date": "2026-08-26",
+      "source": "AWS + NVIDIA",
+      "url": "https://nvidianews.nvidia.com/news/aws-and-nvidia-to-deliver-2-million-additional-gpus-and-next-generation-infrastructure-for-agentic-and-physical-ai",
+      "logo": "nvidia_logo.png",
+      "attribution": "NVIDIA logo used for editorial identification",
+      "claim_status": "primary-claim",
+      "verified_claims": ["Company plan: 2 million additional GPUs across AWS in 2027–2028"],
+      "payoff": {"type": "counter", "value": 2000000, "label": "planned additional GPUs"}
+    },
+    {
+      "rank": 3,
+      "slug": "gemma-billion-downloads",
+      "headline": "Google says Gemma passed one billion downloads",
+      "date": "2026-08-20",
+      "source": "Google DeepMind",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-one-billion-downloads/",
+      "logo": "google_logo.png",
+      "attribution": "Google logo used for editorial identification",
+      "claim_status": "primary-claim",
+      "verified_claims": ["Google-reported: more than 1 billion downloads and 100,000 community variants"],
+      "payoff": {"type": "statcard", "value": "1B", "label": "Gemma downloads"}
+    },
+    {
+      "rank": 4,
+      "slug": "mit-crysvcd-materials",
+      "headline": "MIT reports a stability tool for AI-designed materials",
+      "date": "2026-08-26",
+      "source": "MIT News",
+      "url": "https://news.mit.edu/2026/ai-helps-design-new-materials-that-work-in-real-world-0826",
+      "logo": "none.png",
+      "attribution": "Original diagram only; no third-party image reused",
+      "claim_status": "research-report",
+      "verified_claims": ["MIT-reported: nearly 70% high lattice-dynamics stability in computational generations"],
+      "payoff": {"type": "statcard", "value": "~70%", "label": "high stability reported"}
+    },
+    {
+      "rank": 5,
+      "slug": "model-eval-security",
+      "headline": "OpenAI and Hugging Face publish security findings",
+      "date": "2026-08-26",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/hugging-face-model-evaluation-security-incident/",
+      "logo": "openai_logo.png",
+      "attribution": "OpenAI logo used for editorial identification",
+      "claim_status": "primary-claim",
+      "verified_claims": ["OpenAI says containment, monitoring, and evaluation controls are being strengthened"],
+      "payoff": {"type": "statcard", "value": "AUG 26", "label": "security update"}
+    }
+  ]
+}
