@@ -1,0 +1,20 @@
+{
+  "status": "published_and_verified",
+  "video_id": "K-DcPrWjBJU",
+  "watch_url": "https://www.youtube.com/watch?v=K-DcPrWjBJU",
+  "short_url": "https://youtu.be/K-DcPrWjBJU",
+  "channel": "The Tensor Foundry",
+  "channel_id": "UCCxSmeC9a-6XTwNbZMc5yag",
+  "title": "Weekly in Tech: AI Is Becoming Infrastructure | Sep 1, 2026",
+  "privacy_status": "public",
+  "category_id": "28",
+  "published_at": "2026-08-31T19:17:58Z",
+  "video_sha256": "dbb689c88351103a35f4b13dc38b2175cab90db79136a7ff7940cbe3f0f2fb6d",
+  "verification": {
+    "youtube_upload_response": "uploaded, public, expected channel",
+    "channel_uploads_readback": "video ID and full source-and-credit description found at position 0",
+    "oembed": "title and author_name verified",
+    "watch_page": "loaded and player reported 0:55"
+  },
+  "credits": "Primary source links and editorial attribution included in the public YouTube description. Narration uses Fish Audio (Megan); original editorial graphics and music credited to The Tensor Foundry."
+}
