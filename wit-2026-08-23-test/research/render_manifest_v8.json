@@ -1,0 +1,952 @@
+{
+  "edition": "wit-2026-08-23-template-v8",
+  "script_path": "audio/narration_script_v5.txt",
+  "voice_id": "fb43143e46f44cc6ad7d06230215bab6",
+  "wav": "audio/narration_v6_master.wav",
+  "duration": 55.18,
+  "style": "retro-comic",
+  "segments": [
+    {
+      "story_id": "intro",
+      "cut_start": 0.0,
+      "cut_end": 2.88,
+      "assets": [],
+      "payoff": {
+        "type": "title"
+      }
+    },
+    {
+      "story_id": "qwen38-max",
+      "cut_start": 2.88,
+      "cut_end": 13.01,
+      "assets": [
+        "assets/real/alibaba_logo.png"
+      ],
+      "payoff": {
+        "type": "counter",
+        "value": 2400000000000,
+        "label": "parameters"
+      }
+    },
+    {
+      "story_id": "ox-alpha-stealth",
+      "cut_start": 13.01,
+      "cut_end": 23.98,
+      "assets": [
+        "assets/real/openai_logo.png"
+      ],
+      "payoff": {
+        "type": "comparison",
+        "values": [
+          [
+            "OX Alpha",
+            80
+          ],
+          [
+            "Claude Fable 5",
+            65
+          ],
+          [
+            "GLM-5.3",
+            62
+          ],
+          [
+            "GPT-5.6-sol",
+            52
+          ]
+        ],
+        "label": "DeepSWE Pass@1 %"
+      }
+    },
+    {
+      "story_id": "gemini37-flash",
+      "cut_start": 23.98,
+      "cut_end": 31.24,
+      "assets": [
+        "assets/real/google_logo.png"
+      ],
+      "payoff": {
+        "type": "bar",
+        "values": [
+          [
+            "3.7 Flash",
+            43.6
+          ],
+          [
+            "3.6 Flash",
+            34.4
+          ]
+        ],
+        "label": "FrontierCode %"
+      }
+    },
+    {
+      "story_id": "muse-glimmer",
+      "cut_start": 31.24,
+      "cut_end": 40.01,
+      "assets": [
+        "assets/real/meta_logo.png"
+      ],
+      "payoff": {
+        "type": "statcard",
+        "value": "Apache 2.0",
+        "label": "fully open license"
+      }
+    },
+    {
+      "story_id": "nemotron35-lightning",
+      "cut_start": 40.01,
+      "cut_end": 47.94,
+      "assets": [
+        "assets/real/nvidia_logo.png"
+      ],
+      "payoff": {
+        "type": "counter",
+        "value": 1000000,
+        "label": "token context"
+      }
+    },
+    {
+      "story_id": "recap",
+      "cut_start": 47.94,
+      "cut_end": 54.79,
+      "assets": [],
+      "payoff": {
+        "type": "recap"
+      }
+    }
+  ],
+  "motion": {
+    "cut_cadence": [
+      1.5,
+      2.5
+    ],
+    "zoom_punch": [
+      1.05,
+      1.1
+    ],
+    "easing": "ease_out_expo"
+  },
+  "palette": {
+    "base": "#F7F4EF",
+    "ink": "#17212B",
+    "accents": [
+      "#FF5A5F",
+      "#176B87",
+      "#E9A23B",
+      "#6046B4",
+      "#1E9B78"
+    ],
+    "grammar": "source-first-editorial-v8"
+  },
+  "asset_ledger": [
+    {
+      "file": "assets/real/alibaba_logo.png",
+      "license": "editorial identification; verify per current edition",
+      "source": "Wikimedia Commons"
+    },
+    {
+      "file": "assets/real/openai_logo.png",
+      "license": "editorial identification; verify per current edition",
+      "source": "Wikimedia Commons"
+    },
+    {
+      "file": "assets/real/google_logo.png",
+      "license": "editorial identification; verify per current edition",
+      "source": "Wikimedia Commons"
+    },
+    {
+      "file": "assets/real/meta_logo.png",
+      "license": "editorial identification; verify per current edition",
+      "source": "Wikimedia Commons"
+    },
+    {
+      "file": "assets/real/nvidia_logo.png",
+      "license": "editorial identification; verify per current edition",
+      "source": "Wikimedia Commons"
+    },
+    {
+      "file": "audio/narration_v6_master.wav",
+      "license": "Fish Audio s2.1-pro-free, Megan voice",
+      "source": "fish_tts.sh"
+    }
+  ],
+  "word_timing": [
+    {
+      "start": 0.0,
+      "end": 0.22,
+      "word": "This"
+    },
+    {
+      "start": 0.22,
+      "end": 0.38,
+      "word": "week"
+    },
+    {
+      "start": 0.38,
+      "end": 0.54,
+      "word": "in"
+    },
+    {
+      "start": 0.54,
+      "end": 0.78,
+      "word": "tech,"
+    },
+    {
+      "start": 1.06,
+      "end": 1.26,
+      "word": "five"
+    },
+    {
+      "start": 1.26,
+      "end": 1.54,
+      "word": "big"
+    },
+    {
+      "start": 1.54,
+      "end": 1.74,
+      "word": "wins"
+    },
+    {
+      "start": 1.74,
+      "end": 1.94,
+      "word": "in"
+    },
+    {
+      "start": 1.94,
+      "end": 2.32,
+      "word": "60"
+    },
+    {
+      "start": 2.32,
+      "end": 2.88,
+      "word": "seconds."
+    },
+    {
+      "start": 3.09,
+      "end": 3.41,
+      "word": "One,"
+    },
+    {
+      "start": 4.01,
+      "end": 4.37,
+      "word": "Alibaba"
+    },
+    {
+      "start": 4.37,
+      "end": 4.67,
+      "word": "just"
+    },
+    {
+      "start": 4.67,
+      "end": 5.05,
+      "word": "dropped"
+    },
+    {
+      "start": 5.05,
+      "end": 5.25,
+      "word": "Quinn"
+    },
+    {
+      "start": 5.25,
+      "end": 5.61,
+      "word": "3"
+    },
+    {
+      "start": 5.61,
+      "end": 6.05,
+      "word": ".8"
+    },
+    {
+      "start": 6.05,
+      "end": 6.31,
+      "word": "max,"
+    },
+    {
+      "start": 6.89,
+      "end": 6.99,
+      "word": "and"
+    },
+    {
+      "start": 6.99,
+      "end": 7.11,
+      "word": "it"
+    },
+    {
+      "start": 7.11,
+      "end": 7.29,
+      "word": "is"
+    },
+    {
+      "start": 7.29,
+      "end": 7.91,
+      "word": "huge,"
+    },
+    {
+      "start": 8.08,
+      "end": 8.24,
+      "word": "2"
+    },
+    {
+      "start": 8.24,
+      "end": 8.68,
+      "word": ".4"
+    },
+    {
+      "start": 8.68,
+      "end": 9.04,
+      "word": "trillion"
+    },
+    {
+      "start": 9.04,
+      "end": 9.54,
+      "word": "parameters"
+    },
+    {
+      "start": 9.54,
+      "end": 10.16,
+      "word": "with"
+    },
+    {
+      "start": 10.16,
+      "end": 10.34,
+      "word": "a"
+    },
+    {
+      "start": 10.34,
+      "end": 10.64,
+      "word": "1"
+    },
+    {
+      "start": 10.64,
+      "end": 10.94,
+      "word": "million"
+    },
+    {
+      "start": 10.94,
+      "end": 11.26,
+      "word": "token"
+    },
+    {
+      "start": 11.26,
+      "end": 11.7,
+      "word": "window."
+    },
+    {
+      "start": 11.97,
+      "end": 12.17,
+      "word": "What"
+    },
+    {
+      "start": 12.17,
+      "end": 12.27,
+      "word": "a"
+    },
+    {
+      "start": 12.27,
+      "end": 12.49,
+      "word": "time"
+    },
+    {
+      "start": 12.49,
+      "end": 12.65,
+      "word": "to"
+    },
+    {
+      "start": 12.65,
+      "end": 12.73,
+      "word": "be"
+    },
+    {
+      "start": 12.73,
+      "end": 13.01,
+      "word": "alive."
+    },
+    {
+      "start": 13.35,
+      "end": 13.65,
+      "word": "Two,"
+    },
+    {
+      "start": 14.06,
+      "end": 14.18,
+      "word": "a"
+    },
+    {
+      "start": 14.18,
+      "end": 14.46,
+      "word": "mystery"
+    },
+    {
+      "start": 14.46,
+      "end": 14.8,
+      "word": "model"
+    },
+    {
+      "start": 14.8,
+      "end": 15.12,
+      "word": "called"
+    },
+    {
+      "start": 15.12,
+      "end": 15.56,
+      "word": "OX"
+    },
+    {
+      "start": 15.56,
+      "end": 15.92,
+      "word": "Alpha"
+    },
+    {
+      "start": 15.92,
+      "end": 16.14,
+      "word": "showed"
+    },
+    {
+      "start": 16.14,
+      "end": 16.32,
+      "word": "up"
+    },
+    {
+      "start": 16.32,
+      "end": 16.46,
+      "word": "on"
+    },
+    {
+      "start": 16.46,
+      "end": 17.1,
+      "word": "OpenRouter"
+    },
+    {
+      "start": 17.1,
+      "end": 17.7,
+      "word": "and"
+    },
+    {
+      "start": 17.7,
+      "end": 18.18,
+      "word": "quietly"
+    },
+    {
+      "start": 18.18,
+      "end": 18.42,
+      "word": "beat"
+    },
+    {
+      "start": 18.42,
+      "end": 18.96,
+      "word": "GPT"
+    },
+    {
+      "start": 18.96,
+      "end": 19.26,
+      "word": "5"
+    },
+    {
+      "start": 19.26,
+      "end": 19.74,
+      "word": ".6"
+    },
+    {
+      "start": 19.74,
+      "end": 19.98,
+      "word": "at"
+    },
+    {
+      "start": 19.98,
+      "end": 20.28,
+      "word": "coding,"
+    },
+    {
+      "start": 20.58,
+      "end": 20.84,
+      "word": "80"
+    },
+    {
+      "start": 20.84,
+      "end": 21.2,
+      "word": "%"
+    },
+    {
+      "start": 21.2,
+      "end": 21.46,
+      "word": "on"
+    },
+    {
+      "start": 21.46,
+      "end": 22.26,
+      "word": "DeepSWE,"
+    },
+    {
+      "start": 22.56,
+      "end": 22.78,
+      "word": "and"
+    },
+    {
+      "start": 22.78,
+      "end": 23.06,
+      "word": "nobody"
+    },
+    {
+      "start": 23.06,
+      "end": 23.3,
+      "word": "knows"
+    },
+    {
+      "start": 23.3,
+      "end": 23.5,
+      "word": "who"
+    },
+    {
+      "start": 23.5,
+      "end": 23.7,
+      "word": "built"
+    },
+    {
+      "start": 23.7,
+      "end": 23.98,
+      "word": "it."
+    },
+    {
+      "start": 24.08,
+      "end": 24.36,
+      "word": "Three,"
+    },
+    {
+      "start": 24.82,
+      "end": 25.0,
+      "word": "Google"
+    },
+    {
+      "start": 25.0,
+      "end": 25.34,
+      "word": "shipped"
+    },
+    {
+      "start": 25.34,
+      "end": 25.76,
+      "word": "Gemini"
+    },
+    {
+      "start": 25.76,
+      "end": 26.08,
+      "word": "3"
+    },
+    {
+      "start": 26.08,
+      "end": 26.5,
+      "word": ".7"
+    },
+    {
+      "start": 26.5,
+      "end": 26.9,
+      "word": "Flash"
+    },
+    {
+      "start": 26.9,
+      "end": 27.48,
+      "word": "just"
+    },
+    {
+      "start": 27.48,
+      "end": 27.8,
+      "word": "three"
+    },
+    {
+      "start": 27.8,
+      "end": 28.0,
+      "word": "weeks"
+    },
+    {
+      "start": 28.0,
+      "end": 28.3,
+      "word": "after"
+    },
+    {
+      "start": 28.3,
+      "end": 28.4,
+      "word": "the"
+    },
+    {
+      "start": 28.4,
+      "end": 28.64,
+      "word": "last"
+    },
+    {
+      "start": 28.64,
+      "end": 29.0,
+      "word": "one."
+    },
+    {
+      "start": 29.3,
+      "end": 29.5,
+      "word": "Better"
+    },
+    {
+      "start": 29.5,
+      "end": 29.78,
+      "word": "code"
+    },
+    {
+      "start": 29.78,
+      "end": 30.28,
+      "word": "generation"
+    },
+    {
+      "start": 30.28,
+      "end": 30.64,
+      "word": "at"
+    },
+    {
+      "start": 30.64,
+      "end": 30.84,
+      "word": "half"
+    },
+    {
+      "start": 30.84,
+      "end": 31.0,
+      "word": "the"
+    },
+    {
+      "start": 31.0,
+      "end": 31.24,
+      "word": "price."
+    },
+    {
+      "start": 31.6,
+      "end": 31.92,
+      "word": "Four,"
+    },
+    {
+      "start": 32.31,
+      "end": 32.51,
+      "word": "meta"
+    },
+    {
+      "start": 32.51,
+      "end": 32.75,
+      "word": "is"
+    },
+    {
+      "start": 32.75,
+      "end": 32.95,
+      "word": "back"
+    },
+    {
+      "start": 32.95,
+      "end": 33.13,
+      "word": "in"
+    },
+    {
+      "start": 33.13,
+      "end": 33.21,
+      "word": "the"
+    },
+    {
+      "start": 33.21,
+      "end": 33.41,
+      "word": "open"
+    },
+    {
+      "start": 33.41,
+      "end": 33.71,
+      "word": "weights"
+    },
+    {
+      "start": 33.71,
+      "end": 34.09,
+      "word": "game,"
+    },
+    {
+      "start": 34.42,
+      "end": 34.94,
+      "word": "MuseGlimmer"
+    },
+    {
+      "start": 34.94,
+      "end": 35.44,
+      "word": "30b,"
+    },
+    {
+      "start": 35.87,
+      "end": 36.03,
+      "word": "fully"
+    },
+    {
+      "start": 36.03,
+      "end": 36.47,
+      "word": "open,"
+    },
+    {
+      "start": 36.83,
+      "end": 37.01,
+      "word": "Apache"
+    },
+    {
+      "start": 37.01,
+      "end": 37.39,
+      "word": "2"
+    },
+    {
+      "start": 37.39,
+      "end": 37.83,
+      "word": ".0,"
+    },
+    {
+      "start": 38.33,
+      "end": 38.37,
+      "word": "and"
+    },
+    {
+      "start": 38.37,
+      "end": 38.47,
+      "word": "it"
+    },
+    {
+      "start": 38.47,
+      "end": 38.65,
+      "word": "runs"
+    },
+    {
+      "start": 38.65,
+      "end": 38.85,
+      "word": "on"
+    },
+    {
+      "start": 38.85,
+      "end": 38.95,
+      "word": "a"
+    },
+    {
+      "start": 38.95,
+      "end": 39.23,
+      "word": "single"
+    },
+    {
+      "start": 39.23,
+      "end": 39.69,
+      "word": "consumer"
+    },
+    {
+      "start": 39.69,
+      "end": 40.01,
+      "word": "GPU."
+    },
+    {
+      "start": 40.51,
+      "end": 40.67,
+      "word": "And"
+    },
+    {
+      "start": 40.67,
+      "end": 41.03,
+      "word": "five,"
+    },
+    {
+      "start": 41.45,
+      "end": 41.91,
+      "word": "Nvidia's"
+    },
+    {
+      "start": 41.91,
+      "end": 42.41,
+      "word": "nameotron"
+    },
+    {
+      "start": 42.41,
+      "end": 42.73,
+      "word": "3"
+    },
+    {
+      "start": 42.73,
+      "end": 43.15,
+      "word": ".5"
+    },
+    {
+      "start": 43.15,
+      "end": 43.49,
+      "word": "Lightning"
+    },
+    {
+      "start": 43.49,
+      "end": 43.83,
+      "word": "runs"
+    },
+    {
+      "start": 43.83,
+      "end": 44.09,
+      "word": "AI"
+    },
+    {
+      "start": 44.09,
+      "end": 44.55,
+      "word": "agents"
+    },
+    {
+      "start": 44.55,
+      "end": 44.77,
+      "word": "up"
+    },
+    {
+      "start": 44.77,
+      "end": 44.87,
+      "word": "to"
+    },
+    {
+      "start": 44.87,
+      "end": 45.13,
+      "word": "four"
+    },
+    {
+      "start": 45.13,
+      "end": 45.37,
+      "word": "times"
+    },
+    {
+      "start": 45.37,
+      "end": 45.85,
+      "word": "faster"
+    },
+    {
+      "start": 45.85,
+      "end": 46.26,
+      "word": "on"
+    },
+    {
+      "start": 46.26,
+      "end": 46.44,
+      "word": "just"
+    },
+    {
+      "start": 46.44,
+      "end": 46.8,
+      "word": "three"
+    },
+    {
+      "start": 46.8,
+      "end": 47.18,
+      "word": "billion"
+    },
+    {
+      "start": 47.18,
+      "end": 47.58,
+      "word": "active"
+    },
+    {
+      "start": 47.58,
+      "end": 47.94,
+      "word": "parameters."
+    },
+    {
+      "start": 48.5,
+      "end": 48.6,
+      "word": "The"
+    },
+    {
+      "start": 48.6,
+      "end": 48.86,
+      "word": "pattern"
+    },
+    {
+      "start": 48.86,
+      "end": 49.08,
+      "word": "this"
+    },
+    {
+      "start": 49.08,
+      "end": 49.3,
+      "word": "week,"
+    },
+    {
+      "start": 49.52,
+      "end": 49.72,
+      "word": "open"
+    },
+    {
+      "start": 49.72,
+      "end": 50.04,
+      "word": "models"
+    },
+    {
+      "start": 50.04,
+      "end": 50.26,
+      "word": "are"
+    },
+    {
+      "start": 50.26,
+      "end": 50.54,
+      "word": "closing"
+    },
+    {
+      "start": 50.54,
+      "end": 50.94,
+      "word": "fast"
+    },
+    {
+      "start": 50.94,
+      "end": 51.46,
+      "word": "and"
+    },
+    {
+      "start": 51.46,
+      "end": 51.8,
+      "word": "prices"
+    },
+    {
+      "start": 51.8,
+      "end": 52.08,
+      "word": "keep"
+    },
+    {
+      "start": 52.08,
+      "end": 52.46,
+      "word": "falling."
+    },
+    {
+      "start": 52.83,
+      "end": 53.17,
+      "word": "That's"
+    },
+    {
+      "start": 53.17,
+      "end": 53.25,
+      "word": "your"
+    },
+    {
+      "start": 53.25,
+      "end": 53.39,
+      "word": "week"
+    },
+    {
+      "start": 53.39,
+      "end": 53.55,
+      "word": "in"
+    },
+    {
+      "start": 53.55,
+      "end": 53.75,
+      "word": "tech."
+    },
+    {
+      "start": 54.13,
+      "end": 54.29,
+      "word": "See"
+    },
+    {
+      "start": 54.29,
+      "end": 54.37,
+      "word": "you"
+    },
+    {
+      "start": 54.37,
+      "end": 54.51,
+      "word": "next"
+    },
+    {
+      "start": 54.51,
+      "end": 54.79,
+      "word": "time."
+    }
+  ],
+  "word_timing_source": "captions/words_v6.json"
+}
