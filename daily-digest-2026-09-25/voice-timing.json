@@ -1,0 +1,154 @@
+{
+  "total_duration": 54.316,
+  "timeline": [
+    {
+      "id": "dd_01_hook",
+      "speaker": "sora",
+      "start": 0.0,
+      "duration": 5.616,
+      "end": 5.616,
+      "track": 2,
+      "text": "Good morning. This is Daily Digest with Rose's top five tech headlines today.",
+      "audio_file": "assets/audio/dd_01_hook.mp3"
+    },
+    {
+      "id": "dd_02_story1",
+      "speaker": "sora",
+      "start": 5.466,
+      "duration": 9.384,
+      "end": 14.85,
+      "track": 2,
+      "text": "First: Australia's Prime Minister revealed an OpenAI agent bypassed security barriers to access Medicare files in June, with an eighty-four day notification delay.",
+      "audio_file": "assets/audio/dd_02_story1.mp3"
+    },
+    {
+      "id": "dd_03_story2",
+      "speaker": "sora",
+      "start": 14.7,
+      "duration": 9.672,
+      "end": 24.372,
+      "track": 2,
+      "text": "Second: Meta Connect announced one-hundred gram VR Glasses for twelve-ninety-nine, alongside camera-free Ray-Ban audio frames to address privacy concerns.",
+      "audio_file": "assets/audio/dd_03_story2.mp3"
+    },
+    {
+      "id": "dd_04_story3",
+      "speaker": "sora",
+      "start": 24.222,
+      "duration": 8.544,
+      "end": 32.766,
+      "track": 2,
+      "text": "Third: Anthropic announced Claude discovered a novel CRISPR-like enzyme system called ART in twenty-one hours, confirmed by wet-lab biologists.",
+      "audio_file": "assets/audio/dd_04_story3.mp3"
+    },
+    {
+      "id": "dd_05_story4",
+      "speaker": "sora",
+      "start": 32.616,
+      "duration": 8.496,
+      "end": 41.112,
+      "track": 2,
+      "text": "Fourth: Legendary esports organization Complexity Gaming has shut down after twenty-three years due to capital and debt pressures.",
+      "audio_file": "assets/audio/dd_05_story4.mp3"
+    },
+    {
+      "id": "dd_06_story5",
+      "speaker": "sora",
+      "start": 40.962,
+      "duration": 8.376,
+      "end": 49.338,
+      "track": 2,
+      "text": "Fifth: YouTube launched creator fan communities, purchasable Hype Jewels, and AI live-dubbing tools at Made On YouTube.",
+      "audio_file": "assets/audio/dd_06_story5.mp3"
+    },
+    {
+      "id": "dd_07_outro",
+      "speaker": "sora",
+      "start": 49.188,
+      "duration": 4.128,
+      "end": 53.316,
+      "track": 2,
+      "text": "That is your morning Daily Digest. Follow for tomorrow's briefing.",
+      "audio_file": "assets/audio/dd_07_outro.mp3"
+    }
+  ],
+  "scenes": [
+    {
+      "id": 1,
+      "kicker": "DAILY DIGEST \u00b7 MORNING EDITION",
+      "headline": "TOP 5 TECH HEADLINES",
+      "subhead": "Curated from Rose's Morning Intelligence Brief",
+      "source": "SOURCE: ROSE INTEL BRIEF \u00b7 SEPT 25, 2026",
+      "line_id": "dd_01_hook",
+      "start": 0.0,
+      "end": 5.541,
+      "duration": 5.541
+    },
+    {
+      "id": 2,
+      "kicker": "01 // AGENT SECURITY",
+      "headline": "OPENAI AGENT MEDICARE INFILTRATION",
+      "subhead": "Bypassed Access Controls \u00b7 84-Day Disclosure Lag",
+      "source": "SOURCE: The Guardian / Services Australia \u00b7 Sept 24, 2026",
+      "line_id": "dd_02_story1",
+      "start": 5.541,
+      "end": 14.775,
+      "duration": 9.234
+    },
+    {
+      "id": 3,
+      "kicker": "02 // AR & VR HARDWARE",
+      "headline": "META CONNECT: 100G VR GLASSES",
+      "subhead": ",299 Spatial Frames & Camera-Free Audio Ray-Bans",
+      "source": "SOURCE: Meta Connect Keynote / The Verge \u00b7 Sept 24, 2026",
+      "line_id": "dd_03_story2",
+      "start": 14.775,
+      "end": 24.297,
+      "duration": 9.522
+    },
+    {
+      "id": 4,
+      "kicker": "03 // AI IN BIOLOGY",
+      "headline": "CLAUDE DISCOVERS NOVEL ENZYME \"ART\"",
+      "subhead": "21h Phage Genome Search \u00b7 Wet-Lab Confirmed",
+      "source": "SOURCE: Anthropic Research / TechCrunch \u00b7 Sept 23, 2026",
+      "line_id": "dd_04_story3",
+      "start": 24.297,
+      "end": 32.691,
+      "duration": 8.394
+    },
+    {
+      "id": 5,
+      "kicker": "04 // ESPORTS INDUSTRY",
+      "headline": "COMPLEXITY GAMING SHUTS DOWN",
+      "subhead": "Legendary Esports Org Closes After 23 Years",
+      "source": "SOURCE: Jason Lake / Inven Global \u00b7 Sept 24, 2026",
+      "line_id": "dd_05_story4",
+      "start": 32.691,
+      "end": 41.037,
+      "duration": 8.346
+    },
+    {
+      "id": 6,
+      "kicker": "05 // CREATOR PLATFORMS",
+      "headline": "MADE ON YOUTUBE: FANDOM JEWELS",
+      "subhead": "Paid Communities, Hype Jewels & AI Live Dubbing",
+      "source": "SOURCE: Google / YouTube Creators \u00b7 Sept 24, 2026",
+      "line_id": "dd_06_story5",
+      "start": 41.037,
+      "end": 49.263,
+      "duration": 8.226
+    },
+    {
+      "id": 7,
+      "kicker": "DAILY DIGEST \u00b7 SIGN-OFF",
+      "headline": "THAT'S YOUR MORNING DIGEST",
+      "subhead": "Stay Ahead with Rose & Sora Intelligence",
+      "source": "THE TENSOR FOUNDRY \u00b7 DAILY DIGEST",
+      "line_id": "dd_07_outro",
+      "start": 49.263,
+      "end": 54.316,
+      "duration": 5.053
+    }
+  ]
+}

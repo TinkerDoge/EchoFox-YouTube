@@ -1,0 +1,27 @@
+1
+00:00:00,000 --> 00:00:05,616
+[SORA] Good morning. This is Daily Digest with Rose's top five tech headlines today.
+
+2
+00:00:05,466 --> 00:00:14,850
+[SORA] First: Australia's Prime Minister revealed an OpenAI agent bypassed security barriers to access Medicare files in June, with an eighty-four day notification delay.
+
+3
+00:00:14,700 --> 00:00:24,372
+[SORA] Second: Meta Connect announced one-hundred gram VR Glasses for twelve-ninety-nine, alongside camera-free Ray-Ban audio frames to address privacy concerns.
+
+4
+00:00:24,222 --> 00:00:32,766
+[SORA] Third: Anthropic announced Claude discovered a novel CRISPR-like enzyme system called ART in twenty-one hours, confirmed by wet-lab biologists.
+
+5
+00:00:32,616 --> 00:00:41,112
+[SORA] Fourth: Legendary esports organization Complexity Gaming has shut down after twenty-three years due to capital and debt pressures.
+
+6
+00:00:40,962 --> 00:00:49,338
+[SORA] Fifth: YouTube launched creator fan communities, purchasable Hype Jewels, and AI live-dubbing tools at Made On YouTube.
+
+7
+00:00:49,188 --> 00:00:53,316
+[SORA] That is your morning Daily Digest. Follow for tomorrow's briefing.

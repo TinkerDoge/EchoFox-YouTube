@@ -1,0 +1,1 @@
+AWS received its first Vera server and Vera Rubin GPU.

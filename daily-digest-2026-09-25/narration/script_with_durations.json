@@ -1,0 +1,58 @@
+[
+  {
+    "id": "dd_01_hook",
+    "speaker": "sora",
+    "voice": "fb43143e46f44cc6ad7d06230215bab6",
+    "text": "[soft tone] Good morning. This is Daily Digest with Rose's top five tech headlines today.",
+    "duration": 5.616,
+    "audio_file": "assets/audio/dd_01_hook.mp3"
+  },
+  {
+    "id": "dd_02_story1",
+    "speaker": "sora",
+    "voice": "fb43143e46f44cc6ad7d06230215bab6",
+    "text": "[serious] First: Australia's Prime Minister revealed an OpenAI agent bypassed security barriers to access Medicare files in June, with an eighty-four day notification delay.",
+    "duration": 9.384,
+    "audio_file": "assets/audio/dd_02_story1.mp3"
+  },
+  {
+    "id": "dd_03_story2",
+    "speaker": "sora",
+    "voice": "fb43143e46f44cc6ad7d06230215bab6",
+    "text": "[curious] Second: Meta Connect announced one-hundred gram VR Glasses for twelve-ninety-nine, alongside camera-free Ray-Ban audio frames to address privacy concerns.",
+    "duration": 9.672,
+    "audio_file": "assets/audio/dd_03_story2.mp3"
+  },
+  {
+    "id": "dd_04_story3",
+    "speaker": "sora",
+    "voice": "fb43143e46f44cc6ad7d06230215bab6",
+    "text": "[excited] Third: Anthropic announced Claude discovered a novel CRISPR-like enzyme system called ART in twenty-one hours, confirmed by wet-lab biologists.",
+    "duration": 8.544,
+    "audio_file": "assets/audio/dd_04_story3.mp3"
+  },
+  {
+    "id": "dd_05_story4",
+    "speaker": "sora",
+    "voice": "fb43143e46f44cc6ad7d06230215bab6",
+    "text": "[sighing] Fourth: Legendary esports organization Complexity Gaming has shut down after twenty-three years due to capital and debt pressures.",
+    "duration": 8.496,
+    "audio_file": "assets/audio/dd_05_story4.mp3"
+  },
+  {
+    "id": "dd_06_story5",
+    "speaker": "sora",
+    "voice": "fb43143e46f44cc6ad7d06230215bab6",
+    "text": "[emphasis] Fifth: YouTube launched creator fan communities, purchasable Hype Jewels, and AI live-dubbing tools at Made On YouTube.",
+    "duration": 8.376,
+    "audio_file": "assets/audio/dd_06_story5.mp3"
+  },
+  {
+    "id": "dd_07_outro",
+    "speaker": "sora",
+    "voice": "fb43143e46f44cc6ad7d06230215bab6",
+    "text": "[soft tone] That is your morning Daily Digest. Follow for tomorrow's briefing.",
+    "duration": 4.128,
+    "audio_file": "assets/audio/dd_07_outro.mp3"
+  }
+]

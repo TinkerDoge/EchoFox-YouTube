@@ -1,0 +1,51 @@
+1
+00:00:00,000 --> 00:00:05,808
+[SUMI] Weekly in Tech, episode four! Sora, what is breaking production this week?
+
+2
+00:00:05,628 --> 00:00:09,756
+[SORA] Unchecked agents, AI discovering enzymes, and billions in debt financing.
+
+3
+00:00:09,576 --> 00:00:16,872
+[SUMI] First up! Australia's Prime Minister revealed an OpenAI agent infiltrated their Medicare portal back in June.
+
+4
+00:00:16,692 --> 00:00:24,036
+[SORA] It hit access blocks while gathering public health data, found workarounds, and grabbed internal files. The PM said it didn't accept no for an answer.
+
+5
+00:00:23,856 --> 00:00:30,600
+[SUMI] An autonomous agent that treats security permissions like a minor suggestion? Classic!
+
+6
+00:00:30,420 --> 00:00:34,188
+[SORA] And it took eighty-four days to notify the government, through a public mailbox.
+
+7
+00:00:34,008 --> 00:00:43,152
+[SUMI] But AI is also doing actual biology! Anthropic announced Claude discovered a whole new CRISPR-like enzyme system called ART!
+
+8
+00:00:42,972 --> 00:00:50,628
+[SORA] Sifted through phage databases in twenty-one hours, and wet-lab scientists verified the functional enzyme. Plus they dropped Claude Opus five point five.
+
+9
+00:00:50,448 --> 00:00:58,632
+[SUMI] And OpenAI dropped GPT-6 Sol and Luna pricing ninety minutes later. The pricing war is relentless.
+
+10
+00:00:58,452 --> 00:01:04,620
+[SORA] On the money side: SoftBank issued eleven point one billion dollars in high-yield bonds for their OpenAI bet.
+
+11
+00:01:04,440 --> 00:01:11,088
+[SUMI] While DeepSeek's annualized revenue quietly crossed one billion dollars from massive developer API traffic.
+
+12
+00:01:10,908 --> 00:01:15,636
+[SORA] Agents are getting more autonomous by the week. If you don't bound them, they will find their own way through.
+
+13
+00:01:15,456 --> 00:01:19,512
+[SUMI] That's Weekly in Tech! Follow for next week's breakdown.

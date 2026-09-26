@@ -1,5 +1,20 @@
+# Virtual environments
+**/.venv
+.venv
+**/.venv/
 .venv/
-visual/frames/
-__pycache__/
+
+# Caches & build artifacts
+**/__pycache__
+__pycache__
 *.pyc
+
+# Rendered raw frame caches (thousands of intermediate PNGs)
+**/frames/
+**/frames_/
+**/frames_*/
+**/visual/frames*/
+**/qa/final/frames/
+**/qa/v8/
+**/qa/frame*.png
 qa/frame*.png
