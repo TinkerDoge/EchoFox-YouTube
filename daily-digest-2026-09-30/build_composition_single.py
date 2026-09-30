@@ -41,16 +41,31 @@ def caption_groups(seg_id, budget=34):
 
 
 def caption_html(seg_id):
+    """Two-line lower third: the line being spoken plus the one that follows.
+
+    Showing only the current line left ~86px of empty plate and 242px of dead
+    space below the box. Pairing each group with its successor fills the plate,
+    gives the eye somewhere to rest, and lets the box sit lower and larger.
+    """
     out = []
-    for g in caption_groups(seg_id):
+    gs = caption_groups(seg_id)
+    for i, g in enumerate(gs):
         s, e = g[0]["s"], g[-1]["e"] + 0.18
-        spans = " ".join(
+        cur = " ".join(
             f'<span class="w" data-s="{w["s"]}" data-e="{w["e"]}">{esc(w["w"])}</span>'
             for w in g
         )
+        if i + 1 < len(gs):
+            nxt = " ".join(
+                f'<span class="w" data-s="{w["s"]}" data-e="{w["e"]}">{esc(w["w"])}</span>'
+                for w in gs[i + 1]
+            )
+            body = f'<div class="cur">{cur}</div><div class="nxt">{nxt}</div>'
+        else:
+            body = f'<div class="cur">{cur}</div>'
         out.append(
             f'<div class="cap clip" data-start="{s:.3f}" data-duration="{e - s:.3f}">'
-            f'{spans}</div>'
+            f'{body}</div>'
         )
     return "\n      ".join(out)
 
@@ -176,8 +191,8 @@ htmlout = f"""<!doctype html>
     .subhead {{ position:absolute; left:44px; top:230px; width:632px; font-size:21px;
       line-height:1.25; color:#76E4EA; font-weight:700; }}
 
-    .visual-container {{ position:absolute; left:44px; top:286px; width:632px; height:496px;
-      background:#17212B; border:2px solid #3E4F5D; border-radius:12px; padding:18px;
+    .visual-container {{ position:absolute; left:44px; top:286px; width:632px; height:560px;
+      background:#17212B; border:2px solid #3E4F5D; border-radius:12px; padding:20px;
       display:flex; flex-direction:column; gap:14px; overflow:hidden; }}
 
     .hero-wrap {{ position:relative; flex:1 1 auto; min-height:0; border-radius:8px;
@@ -233,22 +248,27 @@ htmlout = f"""<!doctype html>
     .outro-v {{ font-size:104px; font-weight:700; color:#FFD080; line-height:1; letter-spacing:-4px; }}
     .outro-s {{ font-size:19px; color:#F6F3EB; font-weight:700; max-width:520px; line-height:1.3; }}
 
-    .detail {{ position:absolute; left:44px; top:800px; width:632px; font-size:24px;
+    .detail {{ position:absolute; left:44px; top:866px; width:632px; font-size:24px;
       line-height:1.3; font-weight:700; color:#F6F3EB; }}
-    .source {{ position:absolute; left:44px; top:876px; width:632px; font-size:14px;
+    .source {{ position:absolute; left:44px; top:944px; width:632px; font-size:14px;
       letter-spacing:1px; color:#9AAAB5; font-weight:700; text-transform:uppercase; }}
 
-    /* ---- karaoke captions ---- */
-    .caption-box {{ position:absolute; left:40px; top:920px; width:640px; min-height:118px;
-      background:#F6F3EB; border:2px solid #647480; border-radius:10px; padding:16px 20px;
-      display:flex; flex-direction:column; justify-content:center; z-index:30; }}
+    /* ---- karaoke captions: two-line lower third, bottom-anchored ----
+       The .cap children are position:absolute so GSAP can fade them, which means
+       they contribute NO height to the plate. The plate must therefore declare its
+       own height or it collapses to bare padding and the lines overflow. */
+    .caption-box {{ position:absolute; left:40px; right:40px; bottom:88px; height:152px;
+      background:#F6F3EB; border:2px solid #647480; border-radius:12px; padding:24px 20px;
+      z-index:30; box-shadow:0 10px 28px rgba(0,0,0,0.45); }}
     .speaker-pill {{ position:absolute; top:-13px; left:16px; padding:3px 12px; border-radius:4px;
       font-size:13px; font-weight:700; letter-spacing:1px; color:#FFFFFF; background:#087F5B;
       text-transform:uppercase; }}
-    .cap {{ position:absolute; left:20px; right:20px; font-size:25px; line-height:1.3;
-      font-weight:700; color:#101820; opacity:0; pointer-events:none; }}
+    .cap {{ position:absolute; left:20px; right:20px; opacity:0; pointer-events:none; }}
+    .cap .cur {{ font-size:34px; line-height:1.28; font-weight:700; color:#101820; }}
+    .cap .nxt {{ margin-top:9px; padding-top:9px; border-top:2px solid #C9D2D8;
+      font-size:27px; line-height:1.28; font-weight:700; color:#3E4F5D; }}
     .cap .w {{ border-radius:3px; padding:0 2px; }}
-    .cap .w.on {{ background:#C8102E; color:#FFFFFF;
+    .cap .cur .w.on {{ background:#C8102E; color:#FFFFFF;
       box-shadow:0 0 0 2px rgba(200,16,46,0.35); }}
 
     .progress-bar {{ position:absolute; left:0; bottom:0; width:720px; height:6px;
@@ -316,8 +336,10 @@ htmlout = f"""<!doctype html>
   }});
 
   // karaoke: light the word whose [data-s, data-e] window contains t.
+  // Scoped to .cur so the dimmed "next" preview line can never light a stale
+  // word from the line that just finished.
   // Pure function of timeline position, so any seek reproduces it exactly.
-  const spans = Array.from(document.querySelectorAll(".cap .w"));
+  const spans = Array.from(document.querySelectorAll(".cap .cur .w"));
   const onSpans = new Set();
   function karaoke(t) {{
     for (const sp of spans) {{
