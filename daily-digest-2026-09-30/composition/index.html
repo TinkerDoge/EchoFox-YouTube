@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en" data-resolution="portrait">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=720, height=1280" />
+  <title>Daily Digest — 30 Sep 2026</title>
+  <script src="assets/gsap.min.js"></script>
+  <style>
+    @font-face { font-family:'News'; src:url('assets/fonts/regular.ttf'); font-weight:400; }
+    @font-face { font-family:'News'; src:url('assets/fonts/bold.ttf'); font-weight:700; }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    html, body { width:720px; height:1280px; overflow:hidden; background:#101820;
+      color:#F6F3EB; font-family:'News',sans-serif; -webkit-font-smoothing:antialiased; }
+    #root { position:relative; width:720px; height:1280px; overflow:hidden; background:#101820; }
+
+    .top-header { position:absolute; left:44px; top:40px; right:44px; height:44px;
+      display:flex; justify-content:space-between; align-items:center;
+      border-bottom:2px solid #3E4F5D; font-size:19px; letter-spacing:2px;
+      font-weight:700; color:#C7D0D5; z-index:20; }
+    .top-header b { color:#FFD080; }
+    .live-tag { display:flex; align-items:center; gap:6px; background:#4A1A22; color:#FF8787;
+      padding:2px 10px; border-radius:4px; font-size:14px; font-weight:700; border:1px solid #FF6B6B; }
+    .live-dot { width:8px; height:8px; border-radius:50%; background:#FF6B6B; }
+
+    .scene { position:absolute; inset:0; opacity:0; pointer-events:none; }
+    .kicker { position:absolute; left:44px; top:104px; font-size:17px; font-weight:700;
+      letter-spacing:2.5px; color:#FFD080; text-transform:uppercase; }
+    .headline { position:absolute; left:44px; top:134px; width:632px; font-size:40px;
+      font-weight:700; line-height:1.12; letter-spacing:-1px; color:#F6F3EB; }
+    .subhead { position:absolute; left:44px; top:230px; width:632px; font-size:21px;
+      line-height:1.25; color:#76E4EA; font-weight:700; }
+
+    .visual-container { position:absolute; left:44px; top:286px; width:632px; height:496px;
+      background:#17212B; border:2px solid #3E4F5D; border-radius:12px; padding:18px;
+      display:flex; flex-direction:column; gap:14px; overflow:hidden; }
+
+    .hero-wrap { position:relative; flex:1 1 auto; min-height:0; border-radius:8px; overflow:hidden;
+      border:1.5px solid #4A5F70; background:#0C141B; }
+    .hero { width:100%; height:100%; object-fit:cover; display:block; }
+    .hero-cap { position:absolute; left:0; right:0; bottom:0; background:rgba(16,24,32,0.88);
+      color:#D3DEE5; font-size:12px; font-weight:700; letter-spacing:0.4px; padding:6px 10px; }
+
+    .big-stat { flex:1 1 auto; display:flex; flex-direction:column; justify-content:center;
+      align-items:center; text-align:center; gap:6px; }
+    .big-stat-v { font-size:112px; font-weight:700; color:#FFD080; line-height:1;
+      letter-spacing:-5px; }
+    .big-stat-k { font-size:15px; font-weight:700; color:#76E4EA; letter-spacing:2.5px; }
+    .big-stat-s { font-size:16px; font-weight:700; color:#D3DEE5; }
+
+    .metric-row { display:grid; grid-template-columns:1fr 1fr; gap:12px; flex:0 0 auto; }
+    .metric { background:#202D3A; border:1.5px solid #4A5F70; border-radius:8px;
+      padding:12px 14px; text-align:center; }
+    .metric-k { font-size:12px; color:#D3DEE5; letter-spacing:1px; font-weight:700; }
+    .metric-v { font-size:44px; font-weight:700; color:#FFD080; line-height:1.1; margin-top:2px; }
+    .metric-v.alt { color:#FF6B6B; }
+
+    .deal { display:flex; flex-direction:column; gap:9px; justify-content:center; height:100%; }
+    .deal-row { display:flex; justify-content:space-between; align-items:baseline; }
+    .deal-name { font-size:19px; font-weight:700; color:#F6F3EB; letter-spacing:1.5px; }
+    .deal-v { font-size:27px; font-weight:700; color:#FFD080; }
+    .deal-bar { height:12px; background:#101820; border:1px solid #3E4F5D; border-radius:3px; overflow:hidden; }
+    .deal-fill { height:100%; background:#FFD080; }
+    .deal-note { margin-top:6px; font-size:14px; color:#76E4EA; font-weight:700; text-align:center; }
+
+    .tagline { flex:0 0 auto; text-align:center; font-size:19px; font-weight:700;
+      color:#101820; background:#FFD080; border-radius:8px; padding:13px; letter-spacing:0.5px; }
+
+    .accord { display:flex; flex-direction:column; justify-content:center; gap:16px; height:100%; }
+    .quote { font-size:33px; font-weight:700; color:#F6F3EB; line-height:1.2; }
+    .quote-by { font-size:15px; color:#9AAAB5; font-weight:700; line-height:1.35; }
+    .tag-badge { align-self:flex-start; padding:7px 13px; border-radius:5px; font-size:14px;
+      font-weight:700; letter-spacing:1px; }
+    .tag-badge.warn { background:#4A1A22; color:#FF8787; border:1.5px solid #FF6B6B; }
+
+    .outro-card { display:flex; flex-direction:column; justify-content:center; align-items:center;
+      gap:8px; height:100%; text-align:center; }
+    .outro-k { font-size:15px; letter-spacing:3px; font-weight:700; color:#76E4EA; }
+    .outro-v { font-size:104px; font-weight:700; color:#FFD080; line-height:1; letter-spacing:-4px; }
+    .outro-s { font-size:19px; color:#F6F3EB; font-weight:700; max-width:520px; line-height:1.3; }
+
+    .detail { position:absolute; left:44px; top:800px; width:632px; font-size:24px;
+      line-height:1.3; font-weight:700; color:#F6F3EB; }
+    .source { position:absolute; left:44px; top:876px; width:632px; font-size:14px;
+      letter-spacing:1px; color:#9AAAB5; font-weight:700; text-transform:uppercase; }
+
+    .caption-box { position:absolute; left:40px; top:920px; width:640px; min-height:112px;
+      background:#F6F3EB; border-radius:10px; padding:15px 20px; display:flex; flex-direction:column;
+      justify-content:center; gap:7px; box-shadow:0 8px 24px rgba(0,0,0,0.4); z-index:30; }
+    .speaker-pill { align-self:flex-start; padding:3px 12px; border-radius:4px; font-size:13px;
+      font-weight:700; letter-spacing:1px; color:#FFFFFF; background:#087F5B; text-transform:uppercase; }
+    .caption-text { font-size:23px; line-height:1.26; font-weight:700; color:#101820; }
+    .caption-text .w { background:#A61E4D; color:#FFFFFF; border-radius:3px; padding:0 3px; }
+
+    .progress-bar { position:absolute; left:0; bottom:0; width:720px; height:6px;
+      background:#FFD080; transform-origin:left center; transform:scaleX(0); z-index:40; }
+  </style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-width="720" data-height="1280"
+     data-fps="30" data-duration="51.042">
+
+  <div class="top-header">
+    <span>DAILY DIGEST <b>· MORNING</b></span>
+    <div class="live-tag"><div class="live-dot"></div>ROSE INTEL</div>
+  </div>
+
+  <!-- persistent date chip: the date must never cost the first frame (Gate 4) -->
+
+  <div id="scene-1" class="scene clip" data-start="0.0" data-duration="8.15">
+    <div class="kicker anim">MORNING BRIEF · WED 30 SEP</div>
+    <div class="headline anim">$518B ANTHROPIC CAN'T CANCEL</div>
+    <div class="subhead anim">80% Non-Cancellable · Filed Confidentially</div>
+    <div class="visual-container">
+      
+      <div class="big-stat">
+        <div class="big-stat-v">$518B</div>
+        <div class="big-stat-k">MINIMUM &middot; OVER TEN YEARS</div>
+        <div class="big-stat-s">AI infrastructure, six partners</div>
+      </div>
+      <div class="metric-row">
+        <div class="metric"><div class="metric-k">NON-CANCELLABLE</div><div class="metric-v alt">80%</div></div>
+        <div class="metric"><div class="metric-k">PARTNERS</div><div class="metric-v">6</div></div>
+      </div>
+    
+    </div>
+    <div class="detail anim">The buildout nobody can walk away from.</div>
+    <div class="source anim">Source: Reuters · Sept 29, 2026</div>
+  </div>
+
+  <div id="scene-2" class="scene clip" data-start="8.15" data-duration="13.479000000000001">
+    <div class="kicker anim">STORY 1 · ANTHROPIC IPO FILING</div>
+    <div class="headline anim">THE DEALS YOU PAY FOR IDLE</div>
+    <div class="subhead anim">$111.1B Google · $110B Amazon · $31.4B Microsoft</div>
+    <div class="visual-container">
+      
+      <div class="deal">
+        <div class="deal-row"><span class="deal-name">GOOGLE</span><span class="deal-v">$111.1B</span></div>
+        <div class="deal-bar"><div class="deal-fill" style="width:100%"></div></div>
+        <div class="deal-row"><span class="deal-name">AMAZON</span><span class="deal-v">$110B</span></div>
+        <div class="deal-bar"><div class="deal-fill" style="width:99%"></div></div>
+        <div class="deal-row"><span class="deal-name">MICROSOFT</span><span class="deal-v">$31.4B</span></div>
+        <div class="deal-bar"><div class="deal-fill" style="width:28%"></div></div>
+        <div class="deal-note">Payable over 7–10 years — regardless of usage</div>
+      </div>
+    
+    </div>
+    <div class="detail anim">If actual spend falls short, they still pay Google the difference.</div>
+    <div class="source anim">Source: Reuters · Sept 29, 2026</div>
+  </div>
+
+  <div id="scene-3" class="scene clip" data-start="21.629" data-duration="10.422999999999998">
+    <div class="kicker anim">STORY 2 · OPENAI DEVDAY</div>
+    <div class="headline anim">OPENAI SHIPS DOTS</div>
+    <div class="subhead anim">Always-On Agent · Runs After Chat Closes</div>
+    <div class="visual-container">
+      
+      <div class="hero-wrap">
+        <img class="hero" src="assets/img/openai-dots.jpg" alt="OpenAI Dots agentic avatar" />
+        <div class="hero-cap">Dots agent driving a desktop &mdash; &ldquo;take over&rdquo; control bar</div>
+      </div>
+      <div class="tagline">RUNS AFTER YOU CLOSE THE CHAT</div>
+    
+    </div>
+    <div class="detail anim">Powered by GPT-6 Astra. Pro and Business Premium only.</div>
+    <div class="source anim">Source: TechCrunch · Sept 29, 2026</div>
+  </div>
+
+  <div id="scene-4" class="scene clip" data-start="32.052" data-duration="8.804000000000002">
+    <div class="kicker anim">STORY 3 · WHITE HOUSE ACCORD</div>
+    <div class="headline anim">AN ACCORD WITH NO TEETH</div>
+    <div class="subhead anim">Voluntary Controls · No Enforcement Named</div>
+    <div class="visual-container">
+      
+      <div class="accord">
+        <div class="hero-wrap">
+          <img class="hero" src="assets/img/whitehouse.jpg" alt="White House luncheon with AI executives" />
+          <div class="hero-cap">White House luncheon, Sept 29 &mdash; CBS News</div>
+        </div>
+        <div class="quote">&ldquo;I think it&rsquo;s morally binding.&rdquo;</div>
+        <div class="tag-badge warn">VOLUNTARY &middot; NO AUDITOR NAMED</div>
+      </div>
+    
+    </div>
+    <div class="detail anim">A promise the signatories police themselves.</div>
+    <div class="source anim">Source: CBS News · Sept 29, 2026</div>
+  </div>
+
+  <div id="scene-5" class="scene clip" data-start="40.856" data-duration="8.985999999999997">
+    <div class="kicker anim">THAT'S THE MORNING</div>
+    <div class="headline anim">ONE NUMBER TO REMEMBER</div>
+    <div class="subhead anim">$518B · Locked In, Non-Cancellable</div>
+    <div class="visual-container">
+      
+      <div class="outro-card">
+        <div class="outro-k">THE ONE NUMBER</div>
+        <div class="outro-v">$518B</div>
+        <div class="outro-s">Locked in. Non-cancellable. Signed by nobody&rsquo;s accountant.</div>
+      </div>
+    
+    </div>
+    <div class="detail anim">Rose verifies. Sora delivers. Every morning.</div>
+    <div class="source anim">Tensor Foundry · Daily Digest</div>
+  </div>
+
+  <div class="caption-box">
+    <div class="speaker-pill">[SORA]</div>
+    <div id="caption-content" class="caption-text">Loading caption...</div>
+  </div>
+
+  <div id="progress" class="progress-bar"></div>
+
+  <audio id="bgm" class="clip" data-start="0" data-duration="51.042"
+         data-volume="0.62" data-track-index="1" src="assets/music/bgm.mp3"></audio>
+  <audio id="audio-dd_01_hook" class="clip" data-start="0.0" data-duration="8.15" data-track-index="2" data-volume="1.0" src="assets/audio/dd_01_hook.mp3"></audio>
+  <audio id="audio-dd_02_story1" class="clip" data-start="8.15" data-duration="13.479" data-track-index="3" data-volume="1.0" src="assets/audio/dd_02_story1.mp3"></audio>
+  <audio id="audio-dd_03_story2" class="clip" data-start="21.629" data-duration="10.423" data-track-index="2" data-volume="1.0" src="assets/audio/dd_03_story2.mp3"></audio>
+  <audio id="audio-dd_04_story3" class="clip" data-start="32.052" data-duration="8.803" data-track-index="3" data-volume="1.0" src="assets/audio/dd_04_story3.mp3"></audio>
+  <audio id="audio-dd_05_outro" class="clip" data-start="40.856" data-duration="8.986" data-track-index="2" data-volume="1.0" src="assets/audio/dd_05_outro.mp3"></audio>
+
+</div>
+
+<script>
+  const DURATION = 51.042;
+  const timelineData = [{"id": "dd_01_hook", "speaker": "sora", "start": 0.0, "duration": 8.15, "end": 8.15, "track": 2, "text": "[emphasis] Anthropic just locked in five hundred eighteen billion dollars of cloud computing. And eighty percent of it, they cannot cancel.", "audio_file": "assets/audio/dd_01_hook.mp3", "kicker": "MORNING BRIEF \u00b7 WED 30 SEP", "headline": "$518B ANTHROPIC CAN'T CANCEL", "subhead": "80% Non-Cancellable \u00b7 Filed Confidentially", "detail": "The buildout nobody can walk away from.", "source": "Source: Reuters \u00b7 Sept 29, 2026", "visual": "hook", "scene": 1}, {"id": "dd_02_story1", "speaker": "sora", "start": 8.15, "duration": 13.479, "end": 21.629, "track": 3, "text": "[soft tone] The lab says it expects to spend at least five hundred eighteen billion dollars over ten years with six partners. One hundred eleven billion with Google. A hundred ten with Amazon. Thirty one point four with Microsoft. Payable whether or not they use it.", "audio_file": "assets/audio/dd_02_story1.mp3", "kicker": "STORY 1 \u00b7 ANTHROPIC IPO FILING", "headline": "THE DEALS YOU PAY FOR IDLE", "subhead": "$111.1B Google \u00b7 $110B Amazon \u00b7 $31.4B Microsoft", "detail": "If actual spend falls short, they still pay Google the difference.", "source": "Source: Reuters \u00b7 Sept 29, 2026", "visual": "story1", "scene": 2}, {"id": "dd_03_story2", "speaker": "sora", "start": 21.629, "duration": 10.423, "end": 32.052, "track": 2, "text": "[curious] Anthropic told investors that AI's future demand will be limited principally by the availability of compute. Then it shelved a safety push and shipped an always-on agent that keeps working after you close the chat.", "audio_file": "assets/audio/dd_03_story2.mp3", "kicker": "STORY 2 \u00b7 OPENAI DEVDAY", "headline": "OPENAI SHIPS DOTS", "subhead": "Always-On Agent \u00b7 Runs After Chat Closes", "detail": "Powered by GPT-6 Astra. Pro and Business Premium only.", "source": "Source: TechCrunch \u00b7 Sept 29, 2026", "visual": "story2", "scene": 3}, {"id": "dd_04_story3", "speaker": "sora", "start": 32.052, "duration": 8.803, "end": 40.856, "track": 3, "text": "[emphasis] And at the White House, AI leaders signed an accord pledging robust internal controls. Asked whether it was binding, the president said: I think it's morally binding.", "audio_file": "assets/audio/dd_04_story3.mp3", "kicker": "STORY 3 \u00b7 WHITE HOUSE ACCORD", "headline": "AN ACCORD WITH NO TEETH", "subhead": "Voluntary Controls \u00b7 No Enforcement Named", "detail": "A promise the signatories police themselves.", "source": "Source: CBS News \u00b7 Sept 29, 2026", "visual": "story3", "scene": 4}, {"id": "dd_05_outro", "speaker": "sora", "start": 40.856, "duration": 8.986, "end": 49.842, "track": 2, "text": "[chuckling] Five hundred eighteen billion dollars of compute, one always-on agent, and one voluntary accord. That's the morning. I'm Sora.", "audio_file": "assets/audio/dd_05_outro.mp3", "kicker": "THAT'S THE MORNING", "headline": "ONE NUMBER TO REMEMBER", "subhead": "$518B \u00b7 Locked In, Non-Cancellable", "detail": "Rose verifies. Sora delivers. Every morning.", "source": "Tensor Foundry \u00b7 Daily Digest", "visual": "outro", "scene": 5}];
+  const scenesData = [{"id": 1, "start": 0.0, "end": 8.15, "duration": 8.15, "kicker": "MORNING BRIEF \u00b7 WED 30 SEP", "headline": "$518B ANTHROPIC CAN'T CANCEL", "subhead": "80% Non-Cancellable \u00b7 Filed Confidentially", "detail": "The buildout nobody can walk away from.", "source": "Source: Reuters \u00b7 Sept 29, 2026", "visual": "hook"}, {"id": 2, "start": 8.15, "end": 21.629, "duration": 13.479000000000001, "kicker": "STORY 1 \u00b7 ANTHROPIC IPO FILING", "headline": "THE DEALS YOU PAY FOR IDLE", "subhead": "$111.1B Google \u00b7 $110B Amazon \u00b7 $31.4B Microsoft", "detail": "If actual spend falls short, they still pay Google the difference.", "source": "Source: Reuters \u00b7 Sept 29, 2026", "visual": "story1"}, {"id": 3, "start": 21.629, "end": 32.052, "duration": 10.422999999999998, "kicker": "STORY 2 \u00b7 OPENAI DEVDAY", "headline": "OPENAI SHIPS DOTS", "subhead": "Always-On Agent \u00b7 Runs After Chat Closes", "detail": "Powered by GPT-6 Astra. Pro and Business Premium only.", "source": "Source: TechCrunch \u00b7 Sept 29, 2026", "visual": "story2"}, {"id": 4, "start": 32.052, "end": 40.856, "duration": 8.804000000000002, "kicker": "STORY 3 \u00b7 WHITE HOUSE ACCORD", "headline": "AN ACCORD WITH NO TEETH", "subhead": "Voluntary Controls \u00b7 No Enforcement Named", "detail": "A promise the signatories police themselves.", "source": "Source: CBS News \u00b7 Sept 29, 2026", "visual": "story3"}, {"id": 5, "start": 40.856, "end": 49.842, "duration": 8.985999999999997, "kicker": "THAT'S THE MORNING", "headline": "ONE NUMBER TO REMEMBER", "subhead": "$518B \u00b7 Locked In, Non-Cancellable", "detail": "Rose verifies. Sora delivers. Every morning.", "source": "Tensor Foundry \u00b7 Daily Digest", "visual": "outro"}];
+
+  const tl = gsap.timeline({ paused: true });
+  tl.to("#progress", { scaleX: 1, duration: DURATION, ease: "none" }, 0);
+
+  // Staggered element reveal per scene -> multiple visual states inside one card (Gate 6)
+  scenesData.forEach((sc) => {
+    const el = `#scene-${sc.id}`;
+    tl.to(el, { opacity: 1, duration: 0.18, ease: "power2.out" }, sc.start);
+    tl.fromTo(el + " .kicker", { y: 14, opacity: 0 },
+      { y: 0, opacity: 1, duration: 0.3, ease: "power2.out" }, sc.start + 0.05);
+    tl.fromTo(el + " .headline", { y: 18, opacity: 0 },
+      { y: 0, opacity: 1, duration: 0.3, ease: "power2.out" }, sc.start + 0.15);
+    tl.fromTo(el + " .visual-container", { scale: 0.96, opacity: 0 },
+      { scale: 1, opacity: 1, duration: 0.36, ease: "power2.out" }, sc.start + 0.28);
+    tl.fromTo(el + " .detail", { y: 12, opacity: 0 },
+      { y: 0, opacity: 1, duration: 0.3, ease: "power2.out" }, sc.start + 0.45);
+    tl.fromTo(el + " .source", { opacity: 0 }, { opacity: 1, duration: 0.3 }, sc.start + 0.6);
+    // per-scene inner motion so a single card keeps changing
+    const n = sc.id;
+    tl.fromTo(el + " .metric-v", { scale: 0.9 }, { scale: 1, duration: 0.4, ease: "back.out(2)" }, sc.start + 0.5);
+    tl.fromTo(el + " .big-stat-v", { scale: 0.88 }, { scale: 1, duration: 0.5, ease: "back.out(1.6)" }, sc.start + 0.4);
+    tl.fromTo(el + " .deal-bar", { scaleX: 0 }, { scaleX: 1, duration: 0.5, ease: "power2.out" }, sc.start + 0.55);
+    tl.fromTo(el + " .hero", { scale: 1.06 }, { scale: 1, duration: sc.duration, ease: "none" }, sc.start);
+    tl.fromTo(el + " .outro-v", { scale: 0.85 }, { scale: 1, duration: 0.5, ease: "back.out(1.7)" }, sc.start + 0.4);
+    if (n < scenesData.length) {
+      tl.to(el, { opacity: 0, duration: 0.16, ease: "power2.in" }, sc.end - 0.16);
+    }
+  });
+
+  // Captions: swap the sentence per clip
+  timelineData.forEach((t) => {
+    tl.call(() => {
+      document.getElementById("caption-content").textContent = t.text;
+    }, null, t.start);
+  });
+
+  tl.to("#root", { opacity: 0, duration: 0.6, ease: "power2.in" }, DURATION - 0.6);
+  window.__timelines = { main: tl };
+</script>
+</body>
+</html>

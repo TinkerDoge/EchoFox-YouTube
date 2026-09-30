@@ -1,0 +1,66 @@
+{
+  "episode": "daily-digest-2026-09-30",
+  "voice": "fb43143e46f44cc6ad7d06230215bab6",
+  "voice_label": "Sora (MEGAN SKIENDEL)",
+  "model": "s2.1-pro-free",
+  "anchor": "sora",
+  "target_runtime_s": 58,
+  "notes": "Gate 4 cold open: first frame carries a claim + a number. No greeting, no date card. Gate 5: runtime inside 45-60s proven band. Gate 7: one idea per frame.",
+  "segments": [
+    {
+      "id": "dd_01_hook",
+      "scene": 1,
+      "text": "[emphasis] Anthropic just locked in five hundred eighteen billion dollars of cloud computing. And eighty percent of it, they cannot cancel.",
+      "kicker": "MORNING BRIEF · WED 30 SEP",
+      "headline": "$518B ANTHROPIC CAN'T CANCEL",
+      "subhead": "80% Non-Cancellable · Filed Confidentially",
+      "detail": "The buildout nobody can walk away from.",
+      "source": "Source: Reuters · Sept 29, 2026",
+      "visual": "hook"
+    },
+    {
+      "id": "dd_02_story1",
+      "scene": 2,
+      "text": "[soft tone] The lab says it expects to spend at least five hundred eighteen billion dollars over ten years with six partners. One hundred eleven billion with Google. A hundred ten with Amazon. Thirty one point four with Microsoft. Payable whether or not they use it.",
+      "kicker": "STORY 1 · ANTHROPIC IPO FILING",
+      "headline": "THE DEALS YOU PAY FOR IDLE",
+      "subhead": "$111.1B Google · $110B Amazon · $31.4B Microsoft",
+      "detail": "If actual spend falls short, they still pay Google the difference.",
+      "source": "Source: Reuters · Sept 29, 2026",
+      "visual": "story1"
+    },
+    {
+      "id": "dd_03_story2",
+      "scene": 3,
+      "text": "[curious] Anthropic told investors that AI's future demand will be limited principally by the availability of compute. Then it shelved a safety push and shipped an always-on agent that keeps working after you close the chat.",
+      "kicker": "STORY 2 · OPENAI DEVDAY",
+      "headline": "OPENAI SHIPS DOTS",
+      "subhead": "Always-On Agent · Runs After Chat Closes",
+      "detail": "Powered by GPT-6 Astra. Pro and Business Premium only.",
+      "source": "Source: TechCrunch · Sept 29, 2026",
+      "visual": "story2"
+    },
+    {
+      "id": "dd_04_story3",
+      "scene": 4,
+      "text": "[emphasis] And at the White House, AI leaders signed an accord pledging robust internal controls. Asked whether it was binding, the president said: I think it's morally binding.",
+      "kicker": "STORY 3 · WHITE HOUSE ACCORD",
+      "headline": "AN ACCORD WITH NO TEETH",
+      "subhead": "Voluntary Controls · No Enforcement Named",
+      "detail": "A promise the signatories police themselves.",
+      "source": "Source: CBS News · Sept 29, 2026",
+      "visual": "story3"
+    },
+    {
+      "id": "dd_05_outro",
+      "scene": 5,
+      "text": "[chuckling] Five hundred eighteen billion dollars of compute, one always-on agent, and one voluntary accord. That's the morning. I'm Sora.",
+      "kicker": "THAT'S THE MORNING",
+      "headline": "ONE NUMBER TO REMEMBER",
+      "subhead": "$518B · Locked In, Non-Cancellable",
+      "detail": "Rose verifies. Sora delivers. Every morning.",
+      "source": "Tensor Foundry · Daily Digest",
+      "visual": "outro"
+    }
+  ]
+}
