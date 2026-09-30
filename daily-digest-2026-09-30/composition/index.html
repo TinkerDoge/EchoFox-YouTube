@@ -34,16 +34,15 @@
       background:#17212B; border:2px solid #3E4F5D; border-radius:12px; padding:18px;
       display:flex; flex-direction:column; gap:14px; overflow:hidden; }
 
-    .hero-wrap { position:relative; flex:1 1 auto; min-height:0; border-radius:8px; overflow:hidden;
-      border:1.5px solid #4A5F70; background:#0C141B; }
+    .hero-wrap { position:relative; flex:1 1 auto; min-height:0; border-radius:8px;
+      overflow:hidden; border:1.5px solid #4A5F70; background:#0C141B; }
     .hero { width:100%; height:100%; object-fit:cover; display:block; }
     .hero-cap { position:absolute; left:0; right:0; bottom:0; background:rgba(16,24,32,0.88);
-      color:#D3DEE5; font-size:12px; font-weight:700; letter-spacing:0.4px; padding:6px 10px; }
+      color:#D3DEE5; font-size:12px; font-weight:700; padding:6px 10px; }
 
     .big-stat { flex:1 1 auto; display:flex; flex-direction:column; justify-content:center;
       align-items:center; text-align:center; gap:6px; }
-    .big-stat-v { font-size:112px; font-weight:700; color:#FFD080; line-height:1;
-      letter-spacing:-5px; }
+    .big-stat-v { font-size:112px; font-weight:700; color:#FFD080; line-height:1; letter-spacing:-5px; }
     .big-stat-k { font-size:15px; font-weight:700; color:#76E4EA; letter-spacing:2.5px; }
     .big-stat-s { font-size:16px; font-weight:700; color:#D3DEE5; }
 
@@ -62,12 +61,22 @@
     .deal-fill { height:100%; background:#FFD080; }
     .deal-note { margin-top:6px; font-size:14px; color:#76E4EA; font-weight:700; text-align:center; }
 
-    .tagline { flex:0 0 auto; text-align:center; font-size:19px; font-weight:700;
-      color:#101820; background:#FFD080; border-radius:8px; padding:13px; letter-spacing:0.5px; }
+    .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:12px; flex:1 1 auto; }
+    .mini { background:#202D3A; border:1.5px solid #4A5F70; border-radius:8px;
+      display:flex; flex-direction:column; align-items:center; justify-content:center; gap:4px; }
+    .mini-k { font-size:13px; color:#D3DEE5; letter-spacing:1.5px; font-weight:700; }
+    .mini-v { font-size:72px; font-weight:700; color:#FFD080; line-height:1; }
+    .mini-v.sm { font-size:34px; color:#76E4EA; }
+    .chan { display:flex; gap:10px; flex:0 0 auto; }
+    .chan-tag { flex:1; text-align:center; background:#202D3A; border:1.5px solid #4A5F70;
+      border-radius:6px; padding:12px 6px; font-size:16px; font-weight:700; color:#F6F3EB;
+      letter-spacing:1px; }
+    .chan-tag.dim { color:#7C8B96; border-color:#3E4F5D; }
 
-    .accord { display:flex; flex-direction:column; justify-content:center; gap:16px; height:100%; }
-    .quote { font-size:33px; font-weight:700; color:#F6F3EB; line-height:1.2; }
-    .quote-by { font-size:15px; color:#9AAAB5; font-weight:700; line-height:1.35; }
+    .tagline { flex:0 0 auto; text-align:center; font-size:19px; font-weight:700;
+      color:#101820; background:#FFD080; border-radius:8px; padding:13px; }
+    .accord { display:flex; flex-direction:column; gap:12px; height:100%; }
+    .quote { font-size:29px; font-weight:700; color:#F6F3EB; line-height:1.2; flex:0 0 auto; }
     .tag-badge { align-self:flex-start; padding:7px 13px; border-radius:5px; font-size:14px;
       font-weight:700; letter-spacing:1px; }
     .tag-badge.warn { background:#4A1A22; color:#FF8787; border:1.5px solid #FF6B6B; }
@@ -83,13 +92,18 @@
     .source { position:absolute; left:44px; top:876px; width:632px; font-size:14px;
       letter-spacing:1px; color:#9AAAB5; font-weight:700; text-transform:uppercase; }
 
-    .caption-box { position:absolute; left:40px; top:920px; width:640px; min-height:112px;
-      background:#F6F3EB; border-radius:10px; padding:15px 20px; display:flex; flex-direction:column;
-      justify-content:center; gap:7px; box-shadow:0 8px 24px rgba(0,0,0,0.4); z-index:30; }
-    .speaker-pill { align-self:flex-start; padding:3px 12px; border-radius:4px; font-size:13px;
-      font-weight:700; letter-spacing:1px; color:#FFFFFF; background:#087F5B; text-transform:uppercase; }
-    .caption-text { font-size:23px; line-height:1.26; font-weight:700; color:#101820; }
-    .caption-text .w { background:#A61E4D; color:#FFFFFF; border-radius:3px; padding:0 3px; }
+    /* ---- karaoke captions ---- */
+    .caption-box { position:absolute; left:40px; top:920px; width:640px; min-height:118px;
+      background:#F6F3EB; border:2px solid #647480; border-radius:10px; padding:16px 20px;
+      display:flex; flex-direction:column; justify-content:center; z-index:30; }
+    .speaker-pill { position:absolute; top:-13px; left:16px; padding:3px 12px; border-radius:4px;
+      font-size:13px; font-weight:700; letter-spacing:1px; color:#FFFFFF; background:#087F5B;
+      text-transform:uppercase; }
+    .cap { position:absolute; left:20px; right:20px; font-size:25px; line-height:1.3;
+      font-weight:700; color:#101820; opacity:0; pointer-events:none; }
+    .cap .w { border-radius:3px; padding:0 2px; }
+    .cap .w.on { background:#C8102E; color:#FFFFFF;
+      box-shadow:0 0 0 2px rgba(200,16,46,0.35); }
 
     .progress-bar { position:absolute; left:0; bottom:0; width:720px; height:6px;
       background:#FFD080; transform-origin:left center; transform:scaleX(0); z-index:40; }
@@ -97,21 +111,19 @@
 </head>
 <body>
 <div id="root" data-composition-id="main" data-width="720" data-height="1280"
-     data-fps="30" data-duration="51.042">
+     data-fps="30" data-duration="84.204">
 
   <div class="top-header">
-    <span>DAILY DIGEST <b>· MORNING</b></span>
+    <span>DAILY DIGEST <b>&middot; MORNING</b></span>
     <div class="live-tag"><div class="live-dot"></div>ROSE INTEL</div>
   </div>
 
-  <!-- persistent date chip: the date must never cost the first frame (Gate 4) -->
 
-  <div id="scene-1" class="scene clip" data-start="0.0" data-duration="8.15">
+  <div id="scene-1" class="scene clip" data-start="0.0" data-duration="8.202">
     <div class="kicker anim">MORNING BRIEF · WED 30 SEP</div>
-    <div class="headline anim">$518B ANTHROPIC CAN'T CANCEL</div>
+    <div class="headline anim">$518B ANTHROPIC CAN&#x27;T CANCEL</div>
     <div class="subhead anim">80% Non-Cancellable · Filed Confidentially</div>
     <div class="visual-container">
-      
       <div class="big-stat">
         <div class="big-stat-v">$518B</div>
         <div class="big-stat-k">MINIMUM &middot; OVER TEN YEARS</div>
@@ -121,18 +133,15 @@
         <div class="metric"><div class="metric-k">NON-CANCELLABLE</div><div class="metric-v alt">80%</div></div>
         <div class="metric"><div class="metric-k">PARTNERS</div><div class="metric-v">6</div></div>
       </div>
-    
     </div>
     <div class="detail anim">The buildout nobody can walk away from.</div>
     <div class="source anim">Source: Reuters · Sept 29, 2026</div>
   </div>
-
-  <div id="scene-2" class="scene clip" data-start="8.15" data-duration="13.479000000000001">
+  <div id="scene-2" class="scene clip" data-start="8.202" data-duration="17.424">
     <div class="kicker anim">STORY 1 · ANTHROPIC IPO FILING</div>
     <div class="headline anim">THE DEALS YOU PAY FOR IDLE</div>
     <div class="subhead anim">$111.1B Google · $110B Amazon · $31.4B Microsoft</div>
     <div class="visual-container">
-      
       <div class="deal">
         <div class="deal-row"><span class="deal-name">GOOGLE</span><span class="deal-v">$111.1B</span></div>
         <div class="deal-bar"><div class="deal-fill" style="width:100%"></div></div>
@@ -140,37 +149,55 @@
         <div class="deal-bar"><div class="deal-fill" style="width:99%"></div></div>
         <div class="deal-row"><span class="deal-name">MICROSOFT</span><span class="deal-v">$31.4B</span></div>
         <div class="deal-bar"><div class="deal-fill" style="width:28%"></div></div>
-        <div class="deal-note">Payable over 7–10 years — regardless of usage</div>
+        <div class="deal-note">Payable over 7&ndash;10 years &mdash; regardless of usage</div>
       </div>
-    
     </div>
-    <div class="detail anim">If actual spend falls short, they still pay Google the difference.</div>
+    <div class="detail anim">Payable over seven to ten years, regardless of usage.</div>
     <div class="source anim">Source: Reuters · Sept 29, 2026</div>
   </div>
-
-  <div id="scene-3" class="scene clip" data-start="21.629" data-duration="10.422999999999998">
+  <div id="scene-3" class="scene clip" data-start="25.626" data-duration="13.218">
     <div class="kicker anim">STORY 2 · OPENAI DEVDAY</div>
     <div class="headline anim">OPENAI SHIPS DOTS</div>
     <div class="subhead anim">Always-On Agent · Runs After Chat Closes</div>
     <div class="visual-container">
-      
       <div class="hero-wrap">
-        <img class="hero" src="assets/img/openai-dots.jpg" alt="OpenAI Dots agentic avatar" />
+        <img class="hero" src="assets/img/openai-dots.jpg" alt="Dots agent driving a desktop" />
         <div class="hero-cap">Dots agent driving a desktop &mdash; &ldquo;take over&rdquo; control bar</div>
       </div>
       <div class="tagline">RUNS AFTER YOU CLOSE THE CHAT</div>
-    
     </div>
     <div class="detail anim">Powered by GPT-6 Astra. Pro and Business Premium only.</div>
     <div class="source anim">Source: TechCrunch · Sept 29, 2026</div>
   </div>
-
-  <div id="scene-4" class="scene clip" data-start="32.052" data-duration="8.804000000000002">
+  <div id="scene-4" class="scene clip" data-start="38.844" data-duration="14.42">
+    <div class="kicker anim">STORY 2 · THE DETAIL</div>
+    <div class="headline anim">AN AGENT ON A SHORT LEASH</div>
+    <div class="subhead anim">One Per User · Pro &amp; Business Premium</div>
+    <div class="visual-container">
+      <div class="grid2">
+        <div class="mini">
+          <div class="mini-k">PER USER</div>
+          <div class="mini-v">1</div>
+        </div>
+        <div class="mini">
+          <div class="mini-k">ACCESS</div>
+          <div class="mini-v sm">PRO ONLY</div>
+        </div>
+      </div>
+      <div class="chan">
+        <div class="chan-tag">SLACK</div>
+        <div class="chan-tag">TEAMS</div>
+        <div class="chan-tag dim">SMS SOON</div>
+      </div>
+    </div>
+    <div class="detail anim">OpenAI is also working with Microsoft on Agent 365 controls.</div>
+    <div class="source anim">Source: TechCrunch · Sept 29, 2026</div>
+  </div>
+  <div id="scene-5" class="scene clip" data-start="53.264" data-duration="13.819">
     <div class="kicker anim">STORY 3 · WHITE HOUSE ACCORD</div>
     <div class="headline anim">AN ACCORD WITH NO TEETH</div>
-    <div class="subhead anim">Voluntary Controls · No Enforcement Named</div>
+    <div class="subhead anim">Voluntary Controls · No Auditor Named</div>
     <div class="visual-container">
-      
       <div class="accord">
         <div class="hero-wrap">
           <img class="hero" src="assets/img/whitehouse.jpg" alt="White House luncheon with AI executives" />
@@ -179,24 +206,20 @@
         <div class="quote">&ldquo;I think it&rsquo;s morally binding.&rdquo;</div>
         <div class="tag-badge warn">VOLUNTARY &middot; NO AUDITOR NAMED</div>
       </div>
-    
     </div>
     <div class="detail anim">A promise the signatories police themselves.</div>
     <div class="source anim">Source: CBS News · Sept 29, 2026</div>
   </div>
-
-  <div id="scene-5" class="scene clip" data-start="40.856" data-duration="8.985999999999997">
-    <div class="kicker anim">THAT'S THE MORNING</div>
+  <div id="scene-6" class="scene clip" data-start="67.082" data-duration="15.621">
+    <div class="kicker anim">THAT&#x27;S THE MORNING</div>
     <div class="headline anim">ONE NUMBER TO REMEMBER</div>
     <div class="subhead anim">$518B · Locked In, Non-Cancellable</div>
     <div class="visual-container">
-      
       <div class="outro-card">
         <div class="outro-k">THE ONE NUMBER</div>
         <div class="outro-v">$518B</div>
-        <div class="outro-s">Locked in. Non-cancellable. Signed by nobody&rsquo;s accountant.</div>
+        <div class="outro-s">Locked in. Non-cancellable. Held by nobody&rsquo;s accountant.</div>
       </div>
-    
     </div>
     <div class="detail anim">Rose verifies. Sora delivers. Every morning.</div>
     <div class="source anim">Tensor Foundry · Daily Digest</div>
@@ -204,30 +227,84 @@
 
   <div class="caption-box">
     <div class="speaker-pill">[SORA]</div>
-    <div id="caption-content" class="caption-text">Loading caption...</div>
+
+  <div class="cap-group" data-seg="dd_01_hook">
+      <div class="cap clip" data-start="0.000" data-duration="3.120"><span class="w" data-s="0.0" data-e="0.68">$518</span> <span class="w" data-s="0.68" data-e="1.54">billion,</span> <span class="w" data-s="2.32" data-e="2.62">that&#x27;s</span> <span class="w" data-s="2.62" data-e="2.72">how</span> <span class="w" data-s="2.72" data-e="2.94">much</span></div>
+      <div class="cap clip" data-start="2.940" data-duration="1.640"><span class="w" data-s="2.94" data-e="3.44">Anthropic</span> <span class="w" data-s="3.44" data-e="3.62">has</span> <span class="w" data-s="3.62" data-e="3.84">just</span> <span class="w" data-s="3.84" data-e="4.16">committed</span> <span class="w" data-s="4.16" data-e="4.4">to</span></div>
+      <div class="cap clip" data-start="4.400" data-duration="2.420"><span class="w" data-s="4.4" data-e="4.6">cloud</span> <span class="w" data-s="4.6" data-e="5.06">computing,</span> <span class="w" data-s="5.6" data-e="5.68">and</span> <span class="w" data-s="5.68" data-e="5.86">about</span> <span class="w" data-s="5.86" data-e="6.18">80</span> <span class="w" data-s="6.18" data-e="6.5">%</span> <span class="w" data-s="6.5" data-e="6.64">of</span></div>
+      <div class="cap clip" data-start="6.640" data-duration="1.400"><span class="w" data-s="6.64" data-e="6.82">it,</span> <span class="w" data-s="7.0" data-e="7.16">they</span> <span class="w" data-s="7.16" data-e="7.42">cannot</span> <span class="w" data-s="7.42" data-e="7.86">cancel.</span></div>
+  </div>
+  <div class="cap-group" data-seg="dd_02_story1">
+      <div class="cap clip" data-start="8.220" data-duration="1.640"><span class="w" data-s="8.22" data-e="8.34">The</span> <span class="w" data-s="8.34" data-e="8.5">lab</span> <span class="w" data-s="8.5" data-e="8.76">says</span> <span class="w" data-s="8.76" data-e="8.94">it</span> <span class="w" data-s="8.94" data-e="9.22">expects</span> <span class="w" data-s="9.22" data-e="9.5">to</span> <span class="w" data-s="9.5" data-e="9.68">spend</span></div>
+      <div class="cap clip" data-start="9.680" data-duration="2.620"><span class="w" data-s="9.68" data-e="9.84">at</span> <span class="w" data-s="9.84" data-e="10.04">least</span> <span class="w" data-s="10.04" data-e="10.66">$518</span> <span class="w" data-s="10.66" data-e="11.34">billion</span> <span class="w" data-s="11.34" data-e="11.9">over</span> <span class="w" data-s="11.9" data-e="12.12">10</span></div>
+      <div class="cap clip" data-start="12.120" data-duration="2.760"><span class="w" data-s="12.12" data-e="12.38">years</span> <span class="w" data-s="12.38" data-e="12.9">with</span> <span class="w" data-s="12.9" data-e="13.16">six</span> <span class="w" data-s="13.16" data-e="13.56">partners.</span> <span class="w" data-s="14.62" data-e="14.7">$111</span></div>
+      <div class="cap clip" data-start="14.700" data-duration="2.420"><span class="w" data-s="14.7" data-e="15.18">billion</span> <span class="w" data-s="15.18" data-e="15.48">with</span> <span class="w" data-s="15.48" data-e="15.76">Google,</span> <span class="w" data-s="16.14" data-e="16.66">$110</span> <span class="w" data-s="16.66" data-e="16.94">billion</span></div>
+      <div class="cap clip" data-start="16.940" data-duration="2.560"><span class="w" data-s="16.94" data-e="17.2">with</span> <span class="w" data-s="17.2" data-e="17.64">Amazon,</span> <span class="w" data-s="17.9" data-e="18.3">$31</span> <span class="w" data-s="18.3" data-e="18.86">.4</span> <span class="w" data-s="18.86" data-e="19.02">billion</span> <span class="w" data-s="19.02" data-e="19.32">with</span></div>
+      <div class="cap clip" data-start="19.320" data-duration="1.660"><span class="w" data-s="19.32" data-e="19.74">Microsoft.</span> <span class="w" data-s="20.28" data-e="20.36">And</span> <span class="w" data-s="20.36" data-e="20.56">here&#x27;s</span> <span class="w" data-s="20.56" data-e="20.66">the</span> <span class="w" data-s="20.66" data-e="20.8">part</span></div>
+      <div class="cap clip" data-start="20.800" data-duration="1.560"><span class="w" data-s="20.8" data-e="20.96">worth</span> <span class="w" data-s="20.96" data-e="21.2">sitting</span> <span class="w" data-s="21.2" data-e="21.56">with.</span> <span class="w" data-s="21.82" data-e="22.04">If</span> <span class="w" data-s="22.04" data-e="22.18">their</span></div>
+      <div class="cap clip" data-start="22.180" data-duration="2.040"><span class="w" data-s="22.18" data-e="22.62">actual</span> <span class="w" data-s="22.62" data-e="22.98">spend</span> <span class="w" data-s="22.98" data-e="23.26">falls</span> <span class="w" data-s="23.26" data-e="23.64">short,</span> <span class="w" data-s="23.9" data-e="24.04">they</span></div>
+      <div class="cap clip" data-start="24.040" data-duration="1.400"><span class="w" data-s="24.04" data-e="24.26">still</span> <span class="w" data-s="24.26" data-e="24.48">pay</span> <span class="w" data-s="24.48" data-e="24.72">Google</span> <span class="w" data-s="24.72" data-e="24.94">the</span> <span class="w" data-s="24.94" data-e="25.26">difference.</span></div>
+      <div class="cap clip" data-start="25.260" data-duration="1.100"><span class="w" data-s="25.26" data-e="26.18">Anthropic</span></div>
+  </div>
+  <div class="cap-group" data-seg="dd_03_story2">
+      <div class="cap clip" data-start="26.180" data-duration="2.400"><span class="w" data-s="26.18" data-e="26.46">told</span> <span class="w" data-s="26.46" data-e="27.06">investors</span> <span class="w" data-s="27.06" data-e="27.72">that</span> <span class="w" data-s="27.72" data-e="27.84">the</span> <span class="w" data-s="27.84" data-e="28.16">future</span> <span class="w" data-s="28.16" data-e="28.4">of</span></div>
+      <div class="cap clip" data-start="28.400" data-duration="2.540"><span class="w" data-s="28.4" data-e="28.82">AI</span> <span class="w" data-s="28.82" data-e="29.36">will</span> <span class="w" data-s="29.36" data-e="29.54">be</span> <span class="w" data-s="29.54" data-e="29.92">limited</span> <span class="w" data-s="29.92" data-e="30.4">principally</span> <span class="w" data-s="30.4" data-e="30.76">by</span></div>
+      <div class="cap clip" data-start="30.760" data-duration="2.540"><span class="w" data-s="30.76" data-e="30.9">the</span> <span class="w" data-s="30.9" data-e="31.38">availability</span> <span class="w" data-s="31.38" data-e="31.74">of</span> <span class="w" data-s="31.74" data-e="32.1">compute,</span> <span class="w" data-s="32.96" data-e="33.12">which</span></div>
+      <div class="cap clip" data-start="33.120" data-duration="1.680"><span class="w" data-s="33.12" data-e="33.26">is</span> <span class="w" data-s="33.26" data-e="33.38">a</span> <span class="w" data-s="33.38" data-e="33.54">funny</span> <span class="w" data-s="33.54" data-e="33.78">thing</span> <span class="w" data-s="33.78" data-e="33.92">to</span> <span class="w" data-s="33.92" data-e="34.2">say</span> <span class="w" data-s="34.2" data-e="34.48">in</span> <span class="w" data-s="34.48" data-e="34.62">the</span></div>
+      <div class="cap clip" data-start="34.620" data-duration="1.840"><span class="w" data-s="34.62" data-e="34.82">same</span> <span class="w" data-s="34.82" data-e="35.12">week</span> <span class="w" data-s="35.12" data-e="35.34">that</span> <span class="w" data-s="35.34" data-e="35.96">OpenAI</span> <span class="w" data-s="35.96" data-e="36.28">shipped</span></div>
+      <div class="cap clip" data-start="36.280" data-duration="1.840"><span class="w" data-s="36.28" data-e="36.72">something</span> <span class="w" data-s="36.72" data-e="36.96">that</span> <span class="w" data-s="36.96" data-e="37.24">runs</span> <span class="w" data-s="37.24" data-e="37.62">whether</span> <span class="w" data-s="37.62" data-e="37.82">or</span> <span class="w" data-s="37.82" data-e="37.94">not</span></div>
+      <div class="cap clip" data-start="37.940" data-duration="0.760"><span class="w" data-s="37.94" data-e="38.14">you&#x27;re</span> <span class="w" data-s="38.14" data-e="38.52">watching.</span></div>
+  </div>
+  <div class="cap-group" data-seg="dd_04_story3">
+      <div class="cap clip" data-start="39.080" data-duration="2.000"><span class="w" data-s="39.08" data-e="39.2">Dots</span> <span class="w" data-s="39.2" data-e="39.52">are</span> <span class="w" data-s="39.52" data-e="40.08">personal</span> <span class="w" data-s="40.08" data-e="40.42">agents</span> <span class="w" data-s="40.42" data-e="40.7">that</span> <span class="w" data-s="40.7" data-e="40.9">keep</span></div>
+      <div class="cap clip" data-start="40.900" data-duration="1.600"><span class="w" data-s="40.9" data-e="41.2">working</span> <span class="w" data-s="41.2" data-e="41.42">in</span> <span class="w" data-s="41.42" data-e="41.54">the</span> <span class="w" data-s="41.54" data-e="41.92">background</span> <span class="w" data-s="41.92" data-e="42.32">after</span></div>
+      <div class="cap clip" data-start="42.320" data-duration="1.840"><span class="w" data-s="42.32" data-e="42.5">you</span> <span class="w" data-s="42.5" data-e="42.74">close</span> <span class="w" data-s="42.74" data-e="42.92">the</span> <span class="w" data-s="42.92" data-e="43.16">chat.</span> <span class="w" data-s="43.7" data-e="43.82">You</span> <span class="w" data-s="43.82" data-e="43.98">can</span></div>
+      <div class="cap clip" data-start="43.980" data-duration="1.780"><span class="w" data-s="43.98" data-e="44.22">message</span> <span class="w" data-s="44.22" data-e="44.52">them</span> <span class="w" data-s="44.52" data-e="44.88">through</span> <span class="w" data-s="44.88" data-e="45.24">Slack</span> <span class="w" data-s="45.24" data-e="45.58">or</span></div>
+      <div class="cap clip" data-start="45.580" data-duration="2.900"><span class="w" data-s="45.58" data-e="45.96">Teams,</span> <span class="w" data-s="46.54" data-e="46.68">one</span> <span class="w" data-s="46.68" data-e="46.9">per</span> <span class="w" data-s="46.9" data-e="47.26">user,</span> <span class="w" data-s="47.64" data-e="47.76">and</span> <span class="w" data-s="47.76" data-e="47.98">only</span> <span class="w" data-s="47.98" data-e="48.3">for</span></div>
+      <div class="cap clip" data-start="48.300" data-duration="2.040"><span class="w" data-s="48.3" data-e="48.6">pro</span> <span class="w" data-s="48.6" data-e="48.86">and</span> <span class="w" data-s="48.86" data-e="49.24">business</span> <span class="w" data-s="49.24" data-e="49.62">premium</span> <span class="w" data-s="49.62" data-e="50.16">accounts,</span></div>
+      <div class="cap clip" data-start="50.380" data-duration="2.120"><span class="w" data-s="50.38" data-e="50.62">so</span> <span class="w" data-s="50.62" data-e="50.74">an</span> <span class="w" data-s="50.74" data-e="51.04">always</span> <span class="w" data-s="51.04" data-e="51.3">-on</span> <span class="w" data-s="51.3" data-e="51.66">agent</span> <span class="w" data-s="51.66" data-e="51.96">with</span> <span class="w" data-s="51.96" data-e="52.12">a</span> <span class="w" data-s="52.12" data-e="52.32">very</span></div>
+      <div class="cap clip" data-start="52.320" data-duration="1.260"><span class="w" data-s="52.32" data-e="52.66">short</span> <span class="w" data-s="52.66" data-e="52.9">leash.</span> <span class="w" data-s="52.9" data-e="53.4">And</span></div>
+  </div>
+  <div class="cap-group" data-seg="dd_05_story4">
+      <div class="cap clip" data-start="53.400" data-duration="1.960"><span class="w" data-s="53.4" data-e="53.7">then,</span> <span class="w" data-s="53.92" data-e="54.12">at</span> <span class="w" data-s="54.12" data-e="54.22">the</span> <span class="w" data-s="54.22" data-e="54.36">White</span> <span class="w" data-s="54.36" data-e="54.66">House,</span> <span class="w" data-s="55.02" data-e="55.18">AI</span></div>
+      <div class="cap clip" data-start="55.180" data-duration="1.800"><span class="w" data-s="55.18" data-e="55.5">leaders</span> <span class="w" data-s="55.5" data-e="55.84">signed</span> <span class="w" data-s="55.84" data-e="56.04">an</span> <span class="w" data-s="56.04" data-e="56.28">accord</span> <span class="w" data-s="56.28" data-e="56.8">pledging</span></div>
+      <div class="cap clip" data-start="56.800" data-duration="2.040"><span class="w" data-s="56.8" data-e="57.26">robust</span> <span class="w" data-s="57.26" data-e="57.78">internal</span> <span class="w" data-s="57.78" data-e="58.3">controls</span> <span class="w" data-s="58.3" data-e="58.66">on</span></div>
+      <div class="cap clip" data-start="58.660" data-duration="2.100"><span class="w" data-s="58.66" data-e="59.48">superintelligence.</span> <span class="w" data-s="60.26" data-e="60.34">Asked</span> <span class="w" data-s="60.34" data-e="60.58">whether</span></div>
+      <div class="cap clip" data-start="60.580" data-duration="2.020"><span class="w" data-s="60.58" data-e="60.78">it</span> <span class="w" data-s="60.78" data-e="60.9">was</span> <span class="w" data-s="60.9" data-e="61.32">actually</span> <span class="w" data-s="61.32" data-e="62.0">enforceable,</span> <span class="w" data-s="62.32" data-e="62.42">the</span></div>
+      <div class="cap clip" data-start="62.420" data-duration="1.540"><span class="w" data-s="62.42" data-e="62.62">president</span> <span class="w" data-s="62.62" data-e="63.04">said,</span> <span class="w" data-s="63.4" data-e="63.42">I</span> <span class="w" data-s="63.42" data-e="63.56">think</span> <span class="w" data-s="63.56" data-e="63.78">it&#x27;s</span></div>
+      <div class="cap clip" data-start="63.780" data-duration="2.000"><span class="w" data-s="63.78" data-e="64.08">morally</span> <span class="w" data-s="64.08" data-e="64.52">binding.</span> <span class="w" data-s="65.04" data-e="65.28">That&#x27;s</span> <span class="w" data-s="65.28" data-e="65.38">the</span> <span class="w" data-s="65.38" data-e="65.6">whole</span></div>
+      <div class="cap clip" data-start="65.600" data-duration="1.200"><span class="w" data-s="65.6" data-e="66.08">enforcement</span> <span class="w" data-s="66.08" data-e="66.62">mechanism.</span></div>
+  </div>
+  <div class="cap-group" data-seg="dd_06_outro">
+      <div class="cap clip" data-start="67.660" data-duration="2.720"><span class="w" data-s="67.66" data-e="67.66">$518</span> <span class="w" data-s="67.66" data-e="68.44">billion</span> <span class="w" data-s="68.44" data-e="69.16">of</span> <span class="w" data-s="69.16" data-e="69.52">compute</span> <span class="w" data-s="69.52" data-e="69.86">nobody</span> <span class="w" data-s="69.86" data-e="70.2">can</span></div>
+      <div class="cap clip" data-start="70.200" data-duration="2.360"><span class="w" data-s="70.2" data-e="70.62">cancel,</span> <span class="w" data-s="71.08" data-e="71.28">one</span> <span class="w" data-s="71.28" data-e="71.62">always</span> <span class="w" data-s="71.62" data-e="71.8">-on</span> <span class="w" data-s="71.8" data-e="72.14">agent</span> <span class="w" data-s="72.14" data-e="72.38">with</span></div>
+      <div class="cap clip" data-start="72.380" data-duration="2.120"><span class="w" data-s="72.38" data-e="72.52">a</span> <span class="w" data-s="72.52" data-e="72.74">short</span> <span class="w" data-s="72.74" data-e="73.0">leash,</span> <span class="w" data-s="73.34" data-e="73.5">and</span> <span class="w" data-s="73.5" data-e="73.68">one</span> <span class="w" data-s="73.68" data-e="74.04">accord</span> <span class="w" data-s="74.04" data-e="74.32">held</span></div>
+      <div class="cap clip" data-start="74.320" data-duration="1.660"><span class="w" data-s="74.32" data-e="74.72">together</span> <span class="w" data-s="74.72" data-e="75.02">by</span> <span class="w" data-s="75.02" data-e="75.38">moral</span> <span class="w" data-s="75.38" data-e="75.8">conviction.</span></div>
+      <div class="cap clip" data-start="76.320" data-duration="2.020"><span class="w" data-s="76.32" data-e="76.52">That&#x27;s</span> <span class="w" data-s="76.52" data-e="76.64">your</span> <span class="w" data-s="76.64" data-e="77.0">digest.</span> <span class="w" data-s="77.62" data-e="77.76">Sources</span> <span class="w" data-s="77.76" data-e="78.16">from</span></div>
+      <div class="cap clip" data-start="78.160" data-duration="2.400"><span class="w" data-s="78.16" data-e="78.44">Reuters,</span> <span class="w" data-s="78.96" data-e="79.32">TechCrunch,</span> <span class="w" data-s="79.58" data-e="79.68">and</span> <span class="w" data-s="79.68" data-e="80.0">CBS</span> <span class="w" data-s="80.0" data-e="80.38">News.</span></div>
+      <div class="cap clip" data-start="80.900" data-duration="1.500"><span class="w" data-s="80.9" data-e="81.04">I&#x27;m</span> <span class="w" data-s="81.04" data-e="81.26">Sora.</span> <span class="w" data-s="81.84" data-e="81.98">Stay</span> <span class="w" data-s="81.98" data-e="82.22">curious.</span></div>
+  </div>
   </div>
 
   <div id="progress" class="progress-bar"></div>
 
-  <audio id="bgm" class="clip" data-start="0" data-duration="51.042"
+  <audio id="bgm" class="clip" data-start="0" data-duration="84.204"
          data-volume="0.62" data-track-index="1" src="assets/music/bgm.mp3"></audio>
-  <audio id="audio-dd_01_hook" class="clip" data-start="0.0" data-duration="8.15" data-track-index="2" data-volume="1.0" src="assets/audio/dd_01_hook.mp3"></audio>
-  <audio id="audio-dd_02_story1" class="clip" data-start="8.15" data-duration="13.479" data-track-index="3" data-volume="1.0" src="assets/audio/dd_02_story1.mp3"></audio>
-  <audio id="audio-dd_03_story2" class="clip" data-start="21.629" data-duration="10.423" data-track-index="2" data-volume="1.0" src="assets/audio/dd_03_story2.mp3"></audio>
-  <audio id="audio-dd_04_story3" class="clip" data-start="32.052" data-duration="8.803" data-track-index="3" data-volume="1.0" src="assets/audio/dd_04_story3.mp3"></audio>
-  <audio id="audio-dd_05_outro" class="clip" data-start="40.856" data-duration="8.986" data-track-index="2" data-volume="1.0" src="assets/audio/dd_05_outro.mp3"></audio>
+  <audio id="audio-dd_01_hook" class="clip" data-start="0.0" data-duration="8.202" data-track-index="2" data-volume="1.0" src="assets/audio/dd_01_hook.mp3"></audio>
+  <audio id="audio-dd_02_story1" class="clip" data-start="8.202" data-duration="17.424" data-track-index="3" data-volume="1.0" src="assets/audio/dd_02_story1.mp3"></audio>
+  <audio id="audio-dd_03_story2" class="clip" data-start="25.626" data-duration="13.218" data-track-index="2" data-volume="1.0" src="assets/audio/dd_03_story2.mp3"></audio>
+  <audio id="audio-dd_04_story3" class="clip" data-start="38.844" data-duration="14.42" data-track-index="3" data-volume="1.0" src="assets/audio/dd_04_story3.mp3"></audio>
+  <audio id="audio-dd_05_story4" class="clip" data-start="53.264" data-duration="13.819" data-track-index="2" data-volume="1.0" src="assets/audio/dd_05_story4.mp3"></audio>
+  <audio id="audio-dd_06_outro" class="clip" data-start="67.082" data-duration="15.621" data-track-index="3" data-volume="1.0" src="assets/audio/dd_06_outro.mp3"></audio>
 
 </div>
 
 <script>
-  const DURATION = 51.042;
-  const timelineData = [{"id": "dd_01_hook", "speaker": "sora", "start": 0.0, "duration": 8.15, "end": 8.15, "track": 2, "text": "[emphasis] Anthropic just locked in five hundred eighteen billion dollars of cloud computing. And eighty percent of it, they cannot cancel.", "audio_file": "assets/audio/dd_01_hook.mp3", "kicker": "MORNING BRIEF \u00b7 WED 30 SEP", "headline": "$518B ANTHROPIC CAN'T CANCEL", "subhead": "80% Non-Cancellable \u00b7 Filed Confidentially", "detail": "The buildout nobody can walk away from.", "source": "Source: Reuters \u00b7 Sept 29, 2026", "visual": "hook", "scene": 1}, {"id": "dd_02_story1", "speaker": "sora", "start": 8.15, "duration": 13.479, "end": 21.629, "track": 3, "text": "[soft tone] The lab says it expects to spend at least five hundred eighteen billion dollars over ten years with six partners. One hundred eleven billion with Google. A hundred ten with Amazon. Thirty one point four with Microsoft. Payable whether or not they use it.", "audio_file": "assets/audio/dd_02_story1.mp3", "kicker": "STORY 1 \u00b7 ANTHROPIC IPO FILING", "headline": "THE DEALS YOU PAY FOR IDLE", "subhead": "$111.1B Google \u00b7 $110B Amazon \u00b7 $31.4B Microsoft", "detail": "If actual spend falls short, they still pay Google the difference.", "source": "Source: Reuters \u00b7 Sept 29, 2026", "visual": "story1", "scene": 2}, {"id": "dd_03_story2", "speaker": "sora", "start": 21.629, "duration": 10.423, "end": 32.052, "track": 2, "text": "[curious] Anthropic told investors that AI's future demand will be limited principally by the availability of compute. Then it shelved a safety push and shipped an always-on agent that keeps working after you close the chat.", "audio_file": "assets/audio/dd_03_story2.mp3", "kicker": "STORY 2 \u00b7 OPENAI DEVDAY", "headline": "OPENAI SHIPS DOTS", "subhead": "Always-On Agent \u00b7 Runs After Chat Closes", "detail": "Powered by GPT-6 Astra. Pro and Business Premium only.", "source": "Source: TechCrunch \u00b7 Sept 29, 2026", "visual": "story2", "scene": 3}, {"id": "dd_04_story3", "speaker": "sora", "start": 32.052, "duration": 8.803, "end": 40.856, "track": 3, "text": "[emphasis] And at the White House, AI leaders signed an accord pledging robust internal controls. Asked whether it was binding, the president said: I think it's morally binding.", "audio_file": "assets/audio/dd_04_story3.mp3", "kicker": "STORY 3 \u00b7 WHITE HOUSE ACCORD", "headline": "AN ACCORD WITH NO TEETH", "subhead": "Voluntary Controls \u00b7 No Enforcement Named", "detail": "A promise the signatories police themselves.", "source": "Source: CBS News \u00b7 Sept 29, 2026", "visual": "story3", "scene": 4}, {"id": "dd_05_outro", "speaker": "sora", "start": 40.856, "duration": 8.986, "end": 49.842, "track": 2, "text": "[chuckling] Five hundred eighteen billion dollars of compute, one always-on agent, and one voluntary accord. That's the morning. I'm Sora.", "audio_file": "assets/audio/dd_05_outro.mp3", "kicker": "THAT'S THE MORNING", "headline": "ONE NUMBER TO REMEMBER", "subhead": "$518B \u00b7 Locked In, Non-Cancellable", "detail": "Rose verifies. Sora delivers. Every morning.", "source": "Tensor Foundry \u00b7 Daily Digest", "visual": "outro", "scene": 5}];
-  const scenesData = [{"id": 1, "start": 0.0, "end": 8.15, "duration": 8.15, "kicker": "MORNING BRIEF \u00b7 WED 30 SEP", "headline": "$518B ANTHROPIC CAN'T CANCEL", "subhead": "80% Non-Cancellable \u00b7 Filed Confidentially", "detail": "The buildout nobody can walk away from.", "source": "Source: Reuters \u00b7 Sept 29, 2026", "visual": "hook"}, {"id": 2, "start": 8.15, "end": 21.629, "duration": 13.479000000000001, "kicker": "STORY 1 \u00b7 ANTHROPIC IPO FILING", "headline": "THE DEALS YOU PAY FOR IDLE", "subhead": "$111.1B Google \u00b7 $110B Amazon \u00b7 $31.4B Microsoft", "detail": "If actual spend falls short, they still pay Google the difference.", "source": "Source: Reuters \u00b7 Sept 29, 2026", "visual": "story1"}, {"id": 3, "start": 21.629, "end": 32.052, "duration": 10.422999999999998, "kicker": "STORY 2 \u00b7 OPENAI DEVDAY", "headline": "OPENAI SHIPS DOTS", "subhead": "Always-On Agent \u00b7 Runs After Chat Closes", "detail": "Powered by GPT-6 Astra. Pro and Business Premium only.", "source": "Source: TechCrunch \u00b7 Sept 29, 2026", "visual": "story2"}, {"id": 4, "start": 32.052, "end": 40.856, "duration": 8.804000000000002, "kicker": "STORY 3 \u00b7 WHITE HOUSE ACCORD", "headline": "AN ACCORD WITH NO TEETH", "subhead": "Voluntary Controls \u00b7 No Enforcement Named", "detail": "A promise the signatories police themselves.", "source": "Source: CBS News \u00b7 Sept 29, 2026", "visual": "story3"}, {"id": 5, "start": 40.856, "end": 49.842, "duration": 8.985999999999997, "kicker": "THAT'S THE MORNING", "headline": "ONE NUMBER TO REMEMBER", "subhead": "$518B \u00b7 Locked In, Non-Cancellable", "detail": "Rose verifies. Sora delivers. Every morning.", "source": "Tensor Foundry \u00b7 Daily Digest", "visual": "outro"}];
-
+  const DURATION = 84.204;
+  const scenesData = [{"id": 1, "start": 0.0, "end": 8.202, "duration": 8.202, "kicker": "MORNING BRIEF \u00b7 WED 30 SEP", "headline": "$518B ANTHROPIC CAN'T CANCEL", "subhead": "80% Non-Cancellable \u00b7 Filed Confidentially", "detail": "The buildout nobody can walk away from.", "source": "Source: Reuters \u00b7 Sept 29, 2026", "visual": "hook"}, {"id": 2, "start": 8.202, "end": 25.626, "duration": 17.424, "kicker": "STORY 1 \u00b7 ANTHROPIC IPO FILING", "headline": "THE DEALS YOU PAY FOR IDLE", "subhead": "$111.1B Google \u00b7 $110B Amazon \u00b7 $31.4B Microsoft", "detail": "Payable over seven to ten years, regardless of usage.", "source": "Source: Reuters \u00b7 Sept 29, 2026", "visual": "story1"}, {"id": 3, "start": 25.626, "end": 38.844, "duration": 13.218, "kicker": "STORY 2 \u00b7 OPENAI DEVDAY", "headline": "OPENAI SHIPS DOTS", "subhead": "Always-On Agent \u00b7 Runs After Chat Closes", "detail": "Powered by GPT-6 Astra. Pro and Business Premium only.", "source": "Source: TechCrunch \u00b7 Sept 29, 2026", "visual": "story2"}, {"id": 4, "start": 38.844, "end": 53.264, "duration": 14.42, "kicker": "STORY 2 \u00b7 THE DETAIL", "headline": "AN AGENT ON A SHORT LEASH", "subhead": "One Per User \u00b7 Pro & Business Premium", "detail": "OpenAI is also working with Microsoft on Agent 365 controls.", "source": "Source: TechCrunch \u00b7 Sept 29, 2026", "visual": "story2b"}, {"id": 5, "start": 53.264, "end": 67.082, "duration": 13.819, "kicker": "STORY 3 \u00b7 WHITE HOUSE ACCORD", "headline": "AN ACCORD WITH NO TEETH", "subhead": "Voluntary Controls \u00b7 No Auditor Named", "detail": "A promise the signatories police themselves.", "source": "Source: CBS News \u00b7 Sept 29, 2026", "visual": "story3"}, {"id": 6, "start": 67.082, "end": 82.704, "duration": 15.621, "kicker": "THAT'S THE MORNING", "headline": "ONE NUMBER TO REMEMBER", "subhead": "$518B \u00b7 Locked In, Non-Cancellable", "detail": "Rose verifies. Sora delivers. Every morning.", "source": "Tensor Foundry \u00b7 Daily Digest", "visual": "outro"}];
   const tl = gsap.timeline({ paused: true });
   tl.to("#progress", { scaleX: 1, duration: DURATION, ease: "none" }, 0);
 
-  // Staggered element reveal per scene -> multiple visual states inside one card (Gate 6)
   scenesData.forEach((sc) => {
     const el = `#scene-${sc.id}`;
     tl.to(el, { opacity: 1, duration: 0.18, ease: "power2.out" }, sc.start);
@@ -240,24 +317,39 @@
     tl.fromTo(el + " .detail", { y: 12, opacity: 0 },
       { y: 0, opacity: 1, duration: 0.3, ease: "power2.out" }, sc.start + 0.45);
     tl.fromTo(el + " .source", { opacity: 0 }, { opacity: 1, duration: 0.3 }, sc.start + 0.6);
-    // per-scene inner motion so a single card keeps changing
-    const n = sc.id;
     tl.fromTo(el + " .metric-v", { scale: 0.9 }, { scale: 1, duration: 0.4, ease: "back.out(2)" }, sc.start + 0.5);
     tl.fromTo(el + " .big-stat-v", { scale: 0.88 }, { scale: 1, duration: 0.5, ease: "back.out(1.6)" }, sc.start + 0.4);
     tl.fromTo(el + " .deal-bar", { scaleX: 0 }, { scaleX: 1, duration: 0.5, ease: "power2.out" }, sc.start + 0.55);
+    tl.fromTo(el + " .mini-v", { scale: 0.85 }, { scale: 1, duration: 0.4, ease: "back.out(2)" }, sc.start + 0.5);
     tl.fromTo(el + " .hero", { scale: 1.06 }, { scale: 1, duration: sc.duration, ease: "none" }, sc.start);
     tl.fromTo(el + " .outro-v", { scale: 0.85 }, { scale: 1, duration: 0.5, ease: "back.out(1.7)" }, sc.start + 0.4);
-    if (n < scenesData.length) {
+    if (sc.id < scenesData.length) {
       tl.to(el, { opacity: 0, duration: 0.16, ease: "power2.in" }, sc.end - 0.16);
     }
   });
 
-  // Captions: swap the sentence per clip
-  timelineData.forEach((t) => {
-    tl.call(() => {
-      document.getElementById("caption-content").textContent = t.text;
-    }, null, t.start);
+  // caption line visibility from its own clip window
+  document.querySelectorAll(".cap").forEach((c) => {
+    const s = parseFloat(c.dataset.start), d = parseFloat(c.dataset.duration);
+    tl.fromTo(c, { opacity: 0 }, { opacity: 1, duration: 0.08 }, s);
+    tl.to(c, { opacity: 0, duration: 0.08 }, s + d);
   });
+
+  // karaoke: light the word whose [data-s, data-e] window contains t.
+  // Pure function of timeline position, so any seek reproduces it exactly.
+  const spans = Array.from(document.querySelectorAll(".cap .w"));
+  const onSpans = new Set();
+  function karaoke(t) {
+    for (const sp of spans) {
+      const s = parseFloat(sp.dataset.s), e = parseFloat(sp.dataset.e);
+      const should = t >= s && t <= e;
+      if (should && !onSpans.has(sp)) { sp.classList.add("on"); onSpans.add(sp); }
+      else if (!should && onSpans.has(sp)) { sp.classList.remove("on"); onSpans.delete(sp); }
+    }
+  }
+  tl.eventCallback("onUpdate", function () { karaoke(tl.time()); });
+  karaoke(0);
+  tl.seek(0);
 
   tl.to("#root", { opacity: 0, duration: 0.6, ease: "power2.in" }, DURATION - 0.6);
   window.__timelines = { main: tl };
